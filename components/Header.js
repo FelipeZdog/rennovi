@@ -23,11 +23,11 @@ function Header() {
         <Image
           src={`${
             router.pathname === `/servicos`
-              ? "/logos/rennovi_branca.png"
-              : "/logos/renovi_label.png"
+              ? "/logos/renovi_white.png"
+              : "/logos/renovi_black.png"
           }`}
-          width={120}
-          height={120}
+          width={60}
+          height={60}
           priority={true}
           alt="header"
           className="hidden lg:flex mx-4 lg:mx-12"

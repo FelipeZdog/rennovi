@@ -10,7 +10,7 @@ export default function Home() {
       <Head>
         <title>Clínica Rennovi</title>
         <meta name="description" content="by medusa" />
-        <link rel="icon" href="/logos/renovi_white.png" />
+        <link rel="icon" href="/logos/renoviicon.png" />
       </Head>
       <Banner />
       <Pioneiros />

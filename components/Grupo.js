@@ -16,9 +16,9 @@ function Grupo() {
       className="flex flex-col bg-[#2E2E2E] font-poppins text-white py-12 sidebar"
       id="grupo-vip"
     >
-      <div className="mx-4">
+      <div className="mx-12">
         <div className="flex justify-center">
-          <h1 className="text-lg lg:text-4xl lg:w-1/2 text-center select-none">
+          <h1 className="text-lg lg:text-3 lg:w-1/2 text-center select-none">
             Faça parte do nosso grupo Vip e receba novidades, informações,
             ofertas e convites especiais.
           </h1>
@@ -26,7 +26,7 @@ function Grupo() {
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col gap-3 lg:w-1/2 mx-auto py-8"
+          className="flex flex-col gap-3 lg:w-1/2 mx-auto py-6"
         >
           <input
             {...register("name")}

@@ -19,7 +19,7 @@ function Banner() {
         </p>
         <div className="mt-6">
           <Link href={`/servicos`}>
-            <Button text="Veja mais" style="text-[11px] sm:text-[20px]" />
+            <Button text="Veja mais" style="text-[9px] sm:text-[20px]" />
           </Link>
         </div>
       </div>

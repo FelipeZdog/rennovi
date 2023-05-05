@@ -5,13 +5,13 @@ import { FaWhatsapp } from "react-icons/fa";
 function Card({ img, titulo, desc, serv, duracao, valor }) {
   const text = `Olá, tudo bem ?! Gostaria de obter mais informações à respeito do serviço: ${titulo}.`;
   return (
-    <div className="flex flex-col sm:flex-row bg-white rounded-2xl mx-4 font-poppins max-w-4xl h-[560px] sm:h-[320px] md:h-[300px] lg:h-64">
+    <div className="flex flex-col sm:flex-row bg-white rounded-2xl mx-4 font-poppins max-w-4xl sm:h-[320px] md:h-[320px] lg:h-[270px]">
       <Image
         src={img}
         width={200}
         height={200}
         alt="footer_logo"
-        className="w-full h-1/2  sm:sm:h-[320px] md:h-[300px] md:w-[256px] lg:w-[256px] lg:h-[256px] rounded-tl-2xl rounded-tr-2xl sm:rounded-tr-none sm:rounded-bl-2xl"
+        className="w-full h-1/2  sm:sm:h-[320px] md:h-[320px] md:w-[256px] lg:w-[256px] lg:h-[270px] rounded-tl-2xl rounded-tr-2xl sm:rounded-tr-none sm:rounded-bl-2xl"
       />
       <div className="flex flex-col justify-between p-3 w-full h-full">
         <div className="flex flex-col">
@@ -44,13 +44,22 @@ function Card({ img, titulo, desc, serv, duracao, valor }) {
           </h1>
 
           <a
-            className="flex justify-center gap-1 items-center bg-black text-white rounded-full text-xs px-2 py-1"
+            className="hidden sm:flex justify-center gap-1 items-center bg-black text-white rounded-full text-xs px-2 py-1"
             href={`https://api.whatsapp.com/send?phone=558592971826&text=${text}`}
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaWhatsapp className="text-[15px]" />
             AGENDE AGORA
+          </a>
+          <a
+            className="flex sm:hidden justify-center gap-1 items-center bg-black text-white rounded-full text-xs px-2 py-1"
+            href={`https://api.whatsapp.com/send?phone=558592971826&text=${text}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp className="text-[15px]" />
+            AGENDE
           </a>
         </div>
       </div>

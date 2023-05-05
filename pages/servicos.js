@@ -34,7 +34,7 @@ function Servicos() {
           <h1 className="text-white text-3xl sm:text-5xl text-center line">
             Conheça nossos serviços
           </h1>
-          <div className="flex flex-col gap-4 mt-12 px-3">
+          <div className="flex flex-col gap-4 mt-12 px-8 sm:px-3">
             {currentServicos.map((item, idx) => (
               <Card
                 key={item.id}

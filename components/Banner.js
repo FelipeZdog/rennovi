@@ -12,14 +12,14 @@ function Banner() {
         <h1 className="text-[22px] sm:text-[50px]">
           Conheça a clínica <span className="font-extrabold">Rennovi!</span>
         </h1>
-        <p className="mt-2 text-xs sm:text-lg">
+        <p className="mt-2 text-xs sm:text-lg fold:mx-5 sm:mx-0">
           A primeira clínica boutique da região metropolitana de Fortaleza.
           Somos o maior time de especialistas com as maiores tecnologias no
           cuidado da saúde, beleza e bem estar.
         </p>
         <div className="mt-6">
           <Link href={`/servicos`}>
-            <Button text="Veja mais" style="text-[9px] sm:text-[20px]" />
+            <Button text="Veja mais" style="text-[10px] sm:text-[20px]" />
           </Link>
         </div>
       </div>

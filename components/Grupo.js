@@ -18,7 +18,7 @@ function Grupo() {
     >
       <div className="mx-12">
         <div className="flex justify-center">
-          <h1 className="text-lg lg:text-3 lg:w-1/2 text-center select-none">
+          <h1 className="text-lg lg:text-3xl lg:w-1/2 text-center select-none">
             Faça parte do nosso grupo Vip e receba novidades, informações,
             ofertas e convites especiais.
           </h1>
@@ -48,7 +48,7 @@ function Grupo() {
           />
           <Button
             text="Quero fazer parte do grupo Vip!"
-            style="w-full text-[14px] sm:text-[20px]"
+            style="w-full text-sm sm:text-[20px] py-4"
           />
         </form>
       </div>

@@ -13,20 +13,28 @@ function SobreNos() {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#2E2E2E] text-white">
       <div className="flex flex-col mx-auto max-w-[1080px] py-16">
         <h1 className="text-center text-3xl sm:text-5xl font-poppins underline">
           Conheça <span className="font-bold">quem somos</span>
         </h1>
         {/* missao */}
         <div className="flex justify-center items-center mt-12 mx-4">
-          <div className="flex flex-col sm:flex-row gap-16">
+          <div className="flex flex-col sm:flex-row gap-8 sm:gap-16">
             <div className="flex justify-center">
               <Image
                 src="/about/img1.png"
                 alt="slide_image"
                 width={410}
                 height={410}
+                className="hidden sm:flex"
+              />
+              <Image
+                src="/about/img1.1.png"
+                alt="slide_image"
+                width={173}
+                height={201}
+                className="flex sm:hidden"
               />
             </div>
 
@@ -42,15 +50,25 @@ function SobreNos() {
         </div>
         {/* visao */}
         <div className="flex justify-center items-center mx-4 mt-12 sm:mt-0">
-          <div className="flex flex-col sm:flex-row gap-16">
+          <div className="flex flex-col sm:flex-row gap-8 sm:gap-16">
+            <div className="flex justify-center sm:hidden">
+              <Image
+                src="/about/img1.2.png"
+                alt="slide_image"
+                width={173}
+                height={201}
+                className=""
+              />
+            </div>
             <div className="flex flex-col justify-center gap-3">
               <h1 className="text-2xl sm:text-3xl font-bold">Visão</h1>
+
               <p className="text-lg sm:text-xl">
                 Ser reconhecida como uma clínica de excelência que proporciona
                 grandes experiências e que possui compromisso com a vida.
               </p>
             </div>
-            <div className="flex justify-center">
+            <div className="justify-center hidden sm:flex">
               <Image
                 src="/about/img2.png"
                 alt="slide_image"
@@ -94,17 +112,24 @@ function SobreNos() {
         </div>
       </div>
       {/* pioneirismo */}
-      <div className="bg-[#2E2E2E] py-16">
+      <div className="bg-[#2E2E2E] sm:py-16">
         <div className="flex flex-col mx-auto max-w-[1080px]">
           <div className="flex flex-col mx-4 gap-12 sm:gap-8">
-            <div className="flex flex-col sm:flex-row gap-16 ">
+            <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 ">
               <div className="flex justify-center">
                 <Image
                   src="/about/img3.png"
                   alt="slide_image"
                   width={500}
                   height={500}
-                  className=""
+                  className="hidden sm:flex"
+                />
+                <Image
+                  src="/about/img1.3.png"
+                  alt="slide_image"
+                  width={173}
+                  height={201}
+                  className="flex sm:hidden"
                 />
               </div>
 
@@ -121,6 +146,15 @@ function SobreNos() {
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-10 ">
+              <div className="flex sm:hidden justify-center">
+                <Image
+                  src="/about/img1.4.png"
+                  alt="slide_image"
+                  width={173}
+                  height={201}
+                  className=""
+                />
+              </div>
               <div className="flex flex-col justify-center gap-3">
                 <h1 className="text-2xl sm:text-3xl font-bold text-white">
                   Como a ideia de clínica boutique surgiu?
@@ -131,31 +165,37 @@ function SobreNos() {
                   zona metropolitana de Fortaleza, em Pacajus-CE, no dia 9 de
                   fevereiro de 2018.
                 </p>
+                <p className="text-lg sm:text-xl text-white font-light">
+                  Segundo eles, a ideia inicial foi criar um espaço que além de
+                  entregar qualidade nos serviços de estética e odontologia,
+                  fosse capaz de proporcionar experiências, zelo, humanização,
+                  inovação, arsenal tecnológico e grandes especialistas.
+                </p>
               </div>
-              <div className="flex justify-center">
+              <div className="hidden sm:flex justify-center">
                 <Image
                   src="/about/img4.png"
                   alt="slide_image"
-                  width={500}
-                  height={500}
+                  width={550}
+                  height={550}
                   className=""
                 />
               </div>
-            </div>
-            <div>
-              <p className="text-lg sm:text-xl text-white font-light">
-                Segundo eles, a ideia inicial foi criar um espaço que além de
-                entregar qualidade nos serviços de estética e odontologia, fosse
-                capaz de proporcionar experiências, zelo, humanização, inovação,
-                arsenal tecnológico e grandes especialistas.
-              </p>
             </div>
           </div>
         </div>
       </div>
       {/* simbolo */}
-      <div className="flex flex-col mx-auto max-w-[1080px] py-16">
+      <div className="flex flex-col mx-auto max-w-[1080px] py-8 sm:py-16">
         <div className="flex flex-col sm:flex-row justify-center gap-3 mx-4">
+          <div className="flex sm:hidden justify-center">
+            <Image
+              src="/about/img1.5.png"
+              alt="slide_image"
+              width={173}
+              height={201}
+            />
+          </div>
           <div className="flex flex-col gap-4">
             <h1 className="text-2xl sm:text-3xl font-bold">O símbolo</h1>
             <p className="text-lg sm:text-xl font-normal">
@@ -173,7 +213,7 @@ function SobreNos() {
             </p>
           </div>
 
-          <div className="flex justify-center">
+          <div className="hidden sm:flex justify-center">
             <Image
               src="/about/img5.png"
               alt="slide_image"
@@ -185,8 +225,8 @@ function SobreNos() {
       </div>
       <div className="bg-[#2E2E2E] py-4">
         <div className="flex flex-col mx-auto max-w-[1080px]">
-          <div className="flex flex-col bg-[#2E2E2E] font-poppins text-white py-12 sidebar">
-            <div className="mx-4">
+          <div className="flex flex-col bg-[#2E2E2E] font-poppins text-white py-4 sm:py-12 sidebar">
+            <div className="mx-12 sm:mx-4">
               <div className="flex justify-center">
                 <h1 className="text-3xl lg:text-4xl lg:w-1/2 text-center select-none">
                   Entre em contato

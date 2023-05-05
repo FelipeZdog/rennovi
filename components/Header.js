@@ -105,7 +105,9 @@ function Header() {
                   index === navLinks.length - 1 ? "mb-0" : "mb-4"
                 } text-white`}
               >
-                <Link href={`/${nav.id}`}>{nav.title}</Link>
+                <Link href={`/${nav.id}`} onClick={() => setToggle(false)}>
+                  {nav.title}
+                </Link>
               </li>
             ))}
           </ul>

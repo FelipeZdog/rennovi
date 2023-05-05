@@ -17,26 +17,38 @@ export const slider = [
   {
     id: 1,
     src: "/slide/slide_01.png",
+    name: "Dr. Vinicius Ferreira",
+    cargo: "Biomédico",
   },
   {
     id: 2,
     src: "/slide/slide_02.png",
+    name: "Dr. Vinicius Ferreira",
+    cargo: "Biomédico",
   },
   {
     id: 3,
     src: "/slide/slide_03.png",
+    name: "Dr. Vinicius Ferreira",
+    cargo: "Biomédico",
   },
   {
     id: 4,
     src: "/slide/slide_04.png",
+    name: "Dr. Vinicius Ferreira",
+    cargo: "Biomédico",
   },
   {
     id: 5,
     src: "/slide/slide_05.png",
+    name: "Dr. Vinicius Ferreira",
+    cargo: "Biomédico",
   },
   {
     id: 6,
     src: "/slide/slide_06.png",
+    name: "Dr. Vinicius Ferreira",
+    cargo: "Biomédico",
   },
 ];
 
@@ -167,7 +179,7 @@ export const servicos = [
   {
     id: 5,
     titulo: "DAY SPA NOIVA + ACOMPANHANTE",
-    desc: null,
+    desc: "Day Spa Noiva + Acompanhante",
     serv: "A noiva + acompanhante: Boas Vindas + Banho quente com Esfoliação Corporal Dama da Noite + Day spa luxuoso corpo dourado + Hidromassagem com sais de banho e espuma deliciosa e pétalas de rosas + Almoço/Janta/Lanche saudável e saboroso + Massagem com pedras quentes + Limpeza de pele + Revitalização Facial com Máscara de Diamante + Revitalização dos Pés e Mãos + Lavagem capilar relaxante Grandha + Finalização com Espumante e morangos.",
     duracao: "6H",
     valor: 1397,

@@ -17,7 +17,7 @@ function Footer() {
   return (
     <div className="flex flex-col font-poppins">
       <div className="bg-black text-white">
-        <div className="flex flex-col lg:flex-row justify-between py-8 lg:items-center mx-2 lg:mx-10">
+        <div className="flex flex-col mx-8 lg:flex-row justify-between py-8 items-center lg:mx-10">
           <div className="flex">
             <Image
               src="/logos/renovi_white.png"

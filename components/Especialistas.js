@@ -15,7 +15,7 @@ const Especialistas = () => {
       className="flex flex-col font-poppins justify-center items-center"
       id="especialistas"
     >
-      <h1 className="fold:text-2xl xs:text-3xl sm:text-4xl py-14 text-center">
+      <h1 className="fold:text-2xl xs:text-3xl sm:text-4xl py-6 sm:py-14 text-center">
         Conheça nossos <span className="font-extrabold">Especialistas!</span>
       </h1>
 

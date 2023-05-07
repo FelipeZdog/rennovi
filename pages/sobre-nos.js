@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Button from "../components/Button";
 import { useForm } from "react-hook-form";
+import Head from "next/head";
 
 function SobreNos() {
   const { register, handleSubmit } = useForm();
@@ -14,6 +15,11 @@ function SobreNos() {
 
   return (
     <div className="min-h-screen bg-[#2E2E2E] text-white">
+      <Head>
+        <title>Clínica Rennovi | Sobre Nós</title>
+        <meta name="description" content="by medusa" />
+        <link rel="icon" href="/logos/renoviicon.png" />
+      </Head>
       <div className="flex flex-col mx-auto max-w-[1080px] py-16">
         <h1 className="text-center text-3xl sm:text-5xl font-poppins underline">
           Conheça <span className="font-bold">quem somos</span>
@@ -81,6 +87,24 @@ function SobreNos() {
         </div>
         {/* valores */}
         <div className="flex flex-col justify-center items-center mt-12 mx-4">
+          <div className="flex justify-center sm:hidden pb-6">
+            <Image
+              src="/about/img1.6.png"
+              alt="slide_image"
+              width={203}
+              height={201}
+              className=""
+            />
+          </div>
+          <div className="justify-center pb-10 hidden sm:flex">
+            <Image
+              src="/about/img1.6.png"
+              alt="slide_image"
+              width={353}
+              height={351}
+              className=""
+            />
+          </div>
           <h1 className="text-2xl sm:text-3xl font-bold">Valores</h1>
           <div className="flex flex-col gap-6 text-lg mt-8">
             <h1 className="text-lg sm:text-2xl">
@@ -111,8 +135,13 @@ function SobreNos() {
           </div>
         </div>
       </div>
+      <div className="flex flex-col justify-center items-center mt-0 mx-0 bg-white">
+        <h1 className="text-center text-3xl sm:text-5xl font-poppins underline text-black my-10">
+          <span className="font-bold">Curiosidades</span>
+        </h1>
+      </div>
       {/* pioneirismo */}
-      <div className="bg-[#2E2E2E] sm:py-16">
+      <div className="bg-[#ffffff] sm:py-8">
         <div className="flex flex-col mx-auto max-w-[1080px]">
           <div className="flex flex-col mx-4 gap-12 sm:gap-8">
             <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 ">
@@ -134,10 +163,10 @@ function SobreNos() {
               </div>
 
               <div className="flex flex-col justify-center gap-3">
-                <h1 className="text-2xl sm:text-3xl font-bold text-white">
+                <h1 className="text-2xl sm:text-3xl font-bold text-black">
                   Pioneirismo em tecnologias avançadas
                 </h1>
-                <p className="text-lg sm:text-xl text-white font-light">
+                <p className="text-lg sm:text-xl text-black font-regular">
                   Sempre que surge um novo equipamento na área dermatológica,
                   estética ou odontológica e que possui estudos de comprovação
                   científica de resultados e segurança, a Rennovi traz em
@@ -156,16 +185,16 @@ function SobreNos() {
                 />
               </div>
               <div className="flex flex-col justify-center gap-3">
-                <h1 className="text-2xl sm:text-3xl font-bold text-white">
+                <h1 className="text-2xl sm:text-3xl font-bold text-black">
                   Como a ideia de clínica boutique surgiu?
                 </h1>
-                <p className="text-lg sm:text-xl text-white font-light">
+                <p className="text-lg sm:text-xl text-black font-regular">
                   Os sócios proprietários Vinícius Ferreira e Rógerio Rodrigues
                   tiveram a ideia de instalar a primeira clínica boutique na
                   zona metropolitana de Fortaleza, em Pacajus-CE, no dia 9 de
                   fevereiro de 2018.
                 </p>
-                <p className="text-lg sm:text-xl text-white font-light">
+                <p className="text-lg sm:text-xl text-black font-regular">
                   Segundo eles, a ideia inicial foi criar um espaço que além de
                   entregar qualidade nos serviços de estética e odontologia,
                   fosse capaz de proporcionar experiências, zelo, humanização,
@@ -186,86 +215,88 @@ function SobreNos() {
         </div>
       </div>
       {/* simbolo */}
-      <div className="flex flex-col mx-auto max-w-[1080px] py-8 sm:py-16">
-        <div className="flex flex-col sm:flex-row justify-center gap-3 mx-4">
-          <div className="flex sm:hidden justify-center">
-            <Image
-              src="/about/img1.5.png"
-              alt="slide_image"
-              width={173}
-              height={201}
-            />
-          </div>
-          <div className="flex flex-col gap-4">
-            <h1 className="text-2xl sm:text-3xl font-bold">O símbolo</h1>
-            <p className="text-lg sm:text-xl font-normal">
-              O símbolo celta chamado “Trisquel” foi a inspiração para a criação
-              da logomarca Rennovi.
-            </p>
-            <p className="text-lg sm:text-xl font-normal">
-              Entre os seus significados está a busca pela renovação, equilíbrio
-              entre corpo, mente e espírito.
-            </p>
-            <p className="text-lg sm:text-xl font-normal">
-              Além disso, duas características semelhantes entre a Rennovi e o
-              símbolo Trisquel é a busca pela evolução e a aprendizagem
-              contínua.
-            </p>
-          </div>
+      <div className="bg-[#ffffff] sm:py-0">
+        <div className="flex flex-col mx-auto max-w-[1080px] bg-white text-black py-8 sm:py-16">
+          <div className="flex flex-col sm:flex-row justify-center gap-8">
+            <div className="flex sm:hidden justify-center">
+              <Image
+                src="/about/img1.5.png"
+                alt="slide_image"
+                width={173}
+                height={201}
+              />
+            </div>
+            <div className="flex flex-col gap-4 mx-4">
+              <h1 className="text-2xl sm:text-3xl font-bold">O símbolo</h1>
+              <p className="text-lg sm:text-xl font-normal">
+                O símbolo celta chamado “Trisquel” foi a inspiração para a
+                criação da logomarca Rennovi.
+              </p>
+              <p className="text-lg sm:text-xl font-normal">
+                Entre os seus significados está a busca pela renovação,
+                equilíbrio entre corpo, mente e espírito.
+              </p>
+              <p className="text-lg sm:text-xl font-normal">
+                Além disso, duas características semelhantes entre a Rennovi e o
+                símbolo Trisquel é a busca pela evolução e a aprendizagem
+                contínua.
+              </p>
+            </div>
 
-          <div className="hidden sm:flex justify-center">
-            <Image
-              src="/about/img5.png"
-              alt="slide_image"
-              width={350}
-              height={350}
-            />
+            <div className="hidden sm:flex justify-center">
+              <Image
+                src="/about/img5.png"
+                alt="slide_image"
+                width={350}
+                height={350}
+              />
+            </div>
           </div>
         </div>
-      </div>
-      <div className="bg-[#2E2E2E] py-4">
-        <div className="flex flex-col mx-auto max-w-[1080px]">
-          <div className="flex flex-col bg-[#2E2E2E] font-poppins text-white py-4 sm:py-12 sidebar">
-            <div className="mx-12 sm:mx-4">
-              <div className="flex justify-center">
-                <h1 className="text-3xl lg:text-4xl lg:w-1/2 text-center select-none">
-                  Entre em contato
-                </h1>
-              </div>
+        <div className="bg-[#2E2E2E] py-0">
+          <div className="flex flex-col mx-auto max-w-[1080px]">
+            <div className="flex flex-col bg-[#2E2E2E] font-poppins text-white py-6 sm:py-12 sidebar">
+              <div className="mx-12 sm:mx-4">
+                <div className="flex justify-center">
+                  <h1 className="text-3xl lg:text-4xl lg:w-1/2 text-center select-none">
+                    Entre em contato
+                  </h1>
+                </div>
 
-              <form
-                className="flex flex-col gap-3 lg:w-1/2 mx-auto py-8"
-                onSubmit={handleSubmit(onSubmit)}
-              >
-                <input
-                  {...register("name")}
-                  type="text"
-                  placeholder="Seu nome"
-                  required
-                />
-                <input
-                  {...register("email")}
-                  type="text"
-                  placeholder="Seu email"
-                  required
-                />
-                <input
-                  {...register("number")}
-                  type="text"
-                  placeholder="Seu número"
-                  required
-                />
-                <textarea
-                  {...register("message")}
-                  type="text"
-                  placeholder="Digite seu texto"
-                  required
-                />
-                <Button
-                  text="Enviar Mensagem"
-                  style="w-full text-[15px] sm:text-[20px]"
-                />
-              </form>
+                <form
+                  className="flex flex-col gap-3 lg:w-1/2 mx-auto py-8"
+                  onSubmit={handleSubmit(onSubmit)}
+                >
+                  <input
+                    {...register("name")}
+                    type="text"
+                    placeholder="Seu nome"
+                    required
+                  />
+                  <input
+                    {...register("email")}
+                    type="text"
+                    placeholder="Seu email"
+                    required
+                  />
+                  <input
+                    {...register("number")}
+                    type="text"
+                    placeholder="Seu número"
+                    required
+                  />
+                  <textarea
+                    {...register("message")}
+                    type="text"
+                    placeholder="Digite seu texto"
+                    required
+                  />
+                  <Button
+                    text="Enviar Mensagem"
+                    style="w-full text-[15px] sm:text-[20px]"
+                  />
+                </form>
+              </div>
             </div>
           </div>
         </div>

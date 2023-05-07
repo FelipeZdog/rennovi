@@ -16,39 +16,27 @@ export const navLinks = [
 export const slider = [
   {
     id: 1,
-    src: "/slide/slide_01.png",
-    name: "Dr. Vinicius Ferreira",
-    cargo: "Biomédico",
+    src: "/slide/SLIDE1.png",
   },
   {
     id: 2,
-    src: "/slide/slide_02.png",
-    name: "Dr. Vinicius Ferreira",
-    cargo: "Biomédico",
+    src: "/slide/SLIDE2.png",
   },
   {
     id: 3,
-    src: "/slide/slide_03.png",
-    name: "Dr. Vinicius Ferreira",
-    cargo: "Biomédico",
+    src: "/slide/SLIDE3.png",
   },
   {
     id: 4,
-    src: "/slide/slide_04.png",
-    name: "Dr. Vinicius Ferreira",
-    cargo: "Biomédico",
+    src: "/slide/SLIDE4.png",
   },
   {
     id: 5,
-    src: "/slide/slide_05.png",
-    name: "Dr. Vinicius Ferreira",
-    cargo: "Biomédico",
+    src: "/slide/SLIDE5.png",
   },
   {
     id: 6,
-    src: "/slide/slide_06.png",
-    name: "Dr. Vinicius Ferreira",
-    cargo: "Biomédico",
+    src: "/slide/SLIDE6.png",
   },
 ];
 
@@ -148,6 +136,7 @@ export const servicos = [
     duracao: "3H",
     valor: 430,
     img: "/servicos/day-spa-familia.png",
+    filterId: 1,
   },
   {
     id: 2,
@@ -157,6 +146,7 @@ export const servicos = [
     duracao: "2H30",
     valor: 285,
     img: "/servicos/day-spa-romantico.png",
+    filterId: 1,
   },
   {
     id: 3,
@@ -166,6 +156,7 @@ export const servicos = [
     duracao: "6H",
     valor: 718,
     img: "/servicos/day-spa-noivo.png",
+    filterId: 1,
   },
   {
     id: 4,
@@ -175,15 +166,17 @@ export const servicos = [
     duracao: "6H",
     valor: 997,
     img: "/servicos/day-spa-noiva.png",
+    filterId: 1,
   },
   {
     id: 5,
     titulo: "DAY SPA NOIVA + ACOMPANHANTE",
-    desc: "Day Spa Noiva + Acompanhante",
+    desc: null,
     serv: "A noiva + acompanhante: Boas Vindas + Banho quente com Esfoliação Corporal Dama da Noite + Day spa luxuoso corpo dourado + Hidromassagem com sais de banho e espuma deliciosa e pétalas de rosas + Almoço/Janta/Lanche saudável e saboroso + Massagem com pedras quentes + Limpeza de pele + Revitalização Facial com Máscara de Diamante + Revitalização dos Pés e Mãos + Lavagem capilar relaxante Grandha + Finalização com Espumante e morangos.",
     duracao: "6H",
     valor: 1397,
     img: "/servicos/day-spa-noiva-acompanhante.png",
+    filterId: 1,
   },
   {
     id: 6,
@@ -193,6 +186,7 @@ export const servicos = [
     duracao: "40M",
     valor: 80,
     img: "/servicos/kids-massagem.png",
+    filterId: 2,
   },
   {
     id: 7,
@@ -202,15 +196,7 @@ export const servicos = [
     duracao: "1H",
     valor: 100,
     img: "/servicos/slim-bambu.png",
-  },
-  {
-    id: 8,
-    titulo: "TERAPIA DE PEDRAS QUENTES",
-    desc: "A terapia de Pedras Quentes combina técnicas terapêuticas de manipulação, óleos quentes e aromaterapia. Essas técnicas proporcionam alívio da tensão muscular, permitindo alcançar uma profunda sensação de prazer, relaxamento e bem-estar.",
-    serv: null,
-    duracao: "1H30",
-    valor: 120,
-    img: "/servicos/pedras-quentes.png",
+    filterId: 2,
   },
   {
     id: 9,
@@ -220,7 +206,19 @@ export const servicos = [
     duracao: "1H",
     valor: 100,
     img: "/servicos/massagem-terapeutica.png",
+    filterId: 2,
   },
+  {
+    id: 8,
+    titulo: "TERAPIA DE PEDRAS QUENTES",
+    desc: "A terapia de Pedras Quentes combina técnicas terapêuticas de manipulação, óleos quentes e aromaterapia. Essas técnicas proporcionam alívio da tensão muscular, permitindo alcançar uma profunda sensação de prazer, relaxamento e bem-estar.",
+    serv: null,
+    duracao: "1H30",
+    valor: 120,
+    img: "/servicos/pedras-quentes.png",
+    filterId: 4,
+  },
+
   {
     id: 10,
     titulo: "DRENAGEM LINFÁTICA",
@@ -229,6 +227,7 @@ export const servicos = [
     duracao: "1H30",
     valor: 120,
     img: "/servicos/drenagem-linfatica.png",
+    filterId: 4,
   },
   {
     id: 11,
@@ -238,6 +237,7 @@ export const servicos = [
     duracao: "1H30",
     valor: 120,
     img: "/servicos/limpeza-pele.png",
+    filterId: 4,
   },
   {
     id: 12,
@@ -247,6 +247,7 @@ export const servicos = [
     duracao: "1H",
     valor: 120,
     img: "/servicos/ventosas.png",
+    filterId: 2,
   },
   {
     id: 13,
@@ -256,6 +257,7 @@ export const servicos = [
     duracao: "30M",
     valor: 110,
     img: "/servicos/banho-oceania.png",
+    filterId: 4,
   },
   {
     id: 14,
@@ -265,6 +267,7 @@ export const servicos = [
     duracao: "1H30",
     valor: 100,
     img: "/servicos/lavagem-terapeutica.png",
+    filterId: 3,
   },
   {
     id: 15,
@@ -274,6 +277,7 @@ export const servicos = [
     duracao: "2H",
     valor: 150,
     img: "/servicos/peeling-capilar.png",
+    filterId: 3,
   },
   {
     id: 16,
@@ -283,6 +287,7 @@ export const servicos = [
     duracao: "1H30",
     valor: 549,
     img: "/servicos/cronograma-capilar.png",
+    filterId: 3,
   },
   {
     id: 17,
@@ -294,5 +299,12 @@ export const servicos = [
     duracao: "-",
     valor: "-",
     img: "/servicos/tratamentos-capilares.png",
+    filterId: 3,
   },
 ];
+
+// especificacoes filtros
+// 1 - Day Spa
+// 2 - Massagem
+// 3 - Tratamentos capilares
+// 4 - Relaxamento

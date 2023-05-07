@@ -1,20 +1,54 @@
 import React, { useState, useRef } from "react";
 import { servicos } from "../constants/index";
 import Card from "../components/Card";
+import Select from "react-select";
+import Head from "next/head";
 
 function Servicos() {
+  const [selectedOption, setSelectedOption] = useState({
+    value: null,
+    label: "TODOS",
+  });
   const [currentPage, setCurrentPage] = useState(1);
+  const [servicosFiltrados, setServicosFiltrados] = useState(servicos);
   const itemsPerPage = 5;
 
   const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-  const currentServicos = servicos.slice(startIndex, endIndex);
 
-  const totalPages = Math.ceil(servicos.length / itemsPerPage);
+  const options = [
+    { value: null, label: "TODOS" },
+    { value: 1, label: "DAY SPA" },
+    { value: 2, label: "MASSAGEM" },
+    { value: 3, label: "TRATAMENTOS CAPILARES" },
+    { value: 4, label: "RELAXAMENTO" },
+  ];
+
+  const totalPages = Math.ceil(servicosFiltrados.length / itemsPerPage);
+
+  const displayedServicos = servicosFiltrados.slice(
+    startIndex,
+    startIndex + itemsPerPage
+  );
 
   const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
+    if (pageNumber > totalPages) {
+      setCurrentPage(totalPages);
+    } else {
+      setCurrentPage(pageNumber);
+    }
     scrollToServices(pageNumber);
+  };
+
+  const handleSelectChange = (selected) => {
+    setSelectedOption(selected);
+
+    const selectedValue = selected.value;
+    const filteredServicos = selectedValue
+      ? servicos.filter((servico) => servico.filterId === selectedValue)
+      : servicos;
+
+    setCurrentPage(1);
+    setServicosFiltrados(filteredServicos);
   };
 
   const servicesRef = useRef(null);
@@ -23,19 +57,45 @@ function Servicos() {
     servicesRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
+  const customStyles = {
+    control: (provided, state) => ({
+      ...provided,
+      borderRadius: "8px",
+      boxShadow: "none",
+    }),
+  };
+
   return (
     <div className="min-h-screen">
-      <div className="banner-web2 h-[35vh] sm:h-[65vh]" />
-      <div className="bg-[#2E2E2E]">
+      <Head>
+        <title>Clínica Rennovi | Serviços</title>
+        <meta name="description" content="by medusa" />
+        <link rel="icon" href="/logos/renoviicon.png" />
+      </Head>
+      <div className="banner-web2 h-[35vh] lg:h-[65vh]" />
+      <div className="bg-[#222222]">
         <div
           className="flex flex-col mx-auto max-w-[1080px] justify-center items-center py-16"
           ref={servicesRef}
         >
-          <h1 className="text-white text-3xl sm:text-5xl text-center line">
-            Conheça nossos serviços
+          <h1 className="text-white text-3xl sm:text-5xl text-center underline">
+            Conheça nossos <span className="font-bold">serviços</span>
           </h1>
-          <div className="flex flex-col gap-4 mt-12 px-8 sm:px-3">
-            {currentServicos.map((item, idx) => (
+          <div className="flex flex-row justify-center items-center gap-5 pt-3 pb-0">
+            <h1 className="text-xl text-white">Filtrar por:</h1>
+            <Select
+              value={selectedOption}
+              onChange={handleSelectChange}
+              options={options}
+              placeholder="Selecione uma opção"
+              className="w-56 py-2 rounded"
+              styles={customStyles}
+              classNamePrefix="react-select"
+            />
+          </div>
+
+          <div className="flex flex-col gap-4 mt-12 px-3">
+            {displayedServicos.map((item, idx) => (
               <Card
                 key={item.id}
                 img={item.img}

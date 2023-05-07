@@ -44,8 +44,6 @@ function Slider() {
               className="rounded-md"
               priority={true}
             />
-            <h1>{item.name}</h1>
-            <h1>{item.cargo}</h1>
           </SwiperSlide>
         ))}
 

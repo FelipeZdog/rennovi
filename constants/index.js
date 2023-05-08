@@ -38,6 +38,10 @@ export const slider = [
     id: 6,
     src: "/slide/SLIDE6.png",
   },
+  {
+    id: 7,
+    src: "/slide/SLIDE7.png",
+  },
 ];
 
 export const especialistas = [

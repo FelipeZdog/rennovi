@@ -4,13 +4,27 @@ import Button from "../components/Button";
 import { useForm } from "react-hook-form";
 import Head from "next/head";
 
-function SobreNos() {
+/* function SobreNos() {
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (formData) => {
     const subject = "Quero entrar em contato.";
     const body = `NOME: ${formData.name} | EMAIL: ${formData.email} | NÚMERO: ${formData.number} | MENSAGEM: ${formData.message}`;
     window.location.href = `mailto:atendimentorennovi@gmail.com?subject=${subject}&body= ${body}`;
+  }; */
+
+function SobreNos() {
+  const { register, handleSubmit } = useForm();
+
+  const onSubmit = (formData) => {
+    const name = encodeURIComponent(formData.name);
+    const email = encodeURIComponent(formData.email);
+    const number = encodeURIComponent(formData.number);
+    const message = encodeURIComponent(formData.message);
+    const message2 = `Gostaria de entrar em contato. %0ANome: ${name}%0AEmail: ${email}%0ANúmero: ${number} %0A${message}`;
+    const url = `https://api.whatsapp.com/send?phone=+5585999449009&text=${message2}`;
+
+    window.open(url);
   };
 
   return (

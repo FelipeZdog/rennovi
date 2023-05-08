@@ -69,8 +69,8 @@ function Grupo() {
     const name = encodeURIComponent(formData.name);
     const email = encodeURIComponent(formData.email);
     const number = encodeURIComponent(formData.number);
-    const message = `Nome: ${name}%0AEmail: ${email}%0ANúmero: ${number} %0AGostaria de fazer parte do grupo vip.`;
-    const url = `https://api.whatsapp.com/send?phone=+5585999449009&text=${message}`;
+    const message = `Olá, meu nome é ${name} e gostaria de fazer parte do grupo vip.%0A%0AEste é meu Email: ${email}%0AEste é meu Número: ${number}`;
+    const url = `https://api.whatsapp.com/send?phone=+5585992971826&text=${message}`;
 
     window.open(url);
   };
@@ -107,7 +107,7 @@ function Grupo() {
           <input
             {...register("number")}
             type="number"
-            placeholder="Seu número"
+            placeholder="Seu número com (DDD)"
             required
           />
           <Button

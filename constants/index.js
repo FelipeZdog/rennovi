@@ -190,7 +190,7 @@ export const servicos = [
     duracao: "40M",
     valor: 80,
     img: "/servicos/kids-massagem.png",
-    filterId: 2,
+    filterId: 1,
   },
   {
     id: 7,
@@ -200,7 +200,7 @@ export const servicos = [
     duracao: "1H",
     valor: 100,
     img: "/servicos/slim-bambu.png",
-    filterId: 2,
+    filterId: 1,
   },
   {
     id: 9,
@@ -210,7 +210,7 @@ export const servicos = [
     duracao: "1H",
     valor: 100,
     img: "/servicos/massagem-terapeutica.png",
-    filterId: 2,
+    filterId: 1,
   },
   {
     id: 8,
@@ -220,7 +220,7 @@ export const servicos = [
     duracao: "1H30",
     valor: 120,
     img: "/servicos/pedras-quentes.png",
-    filterId: 4,
+    filterId: 1,
   },
 
   {
@@ -231,7 +231,7 @@ export const servicos = [
     duracao: "1H30",
     valor: 120,
     img: "/servicos/drenagem-linfatica.png",
-    filterId: 4,
+    filterId: 1,
   },
   {
     id: 11,
@@ -241,7 +241,7 @@ export const servicos = [
     duracao: "1H30",
     valor: 120,
     img: "/servicos/limpeza-pele.png",
-    filterId: 4,
+    filterId: 1,
   },
   {
     id: 12,
@@ -251,7 +251,7 @@ export const servicos = [
     duracao: "1H",
     valor: 120,
     img: "/servicos/ventosas.png",
-    filterId: 2,
+    filterId: 1,
   },
   {
     id: 13,
@@ -261,7 +261,7 @@ export const servicos = [
     duracao: "30M",
     valor: 110,
     img: "/servicos/banho-oceania.png",
-    filterId: 4,
+    filterId: 1,
   },
   {
     id: 14,
@@ -271,17 +271,17 @@ export const servicos = [
     duracao: "1H30",
     valor: 100,
     img: "/servicos/lavagem-terapeutica.png",
-    filterId: 3,
+    filterId: 1,
   },
   {
-    id: 15,
+    id: 62,
     titulo: "PEELING CAPILAR",
     desc: "Ritual capilar indicado para higienização profunda do couro cabeludo com seborreia e caspas que melhora a circulação sanguínea trazendo nutrientes para a região, hidratação e fortalecimento dos fios com geoterapia, alta frequência e óleo de melaleuca.",
     serv: null,
     duracao: "2H",
     valor: 150,
     img: "/servicos/peeling-capilar.png",
-    filterId: 3,
+    filterId: 7,
   },
   {
     id: 16,
@@ -291,7 +291,7 @@ export const servicos = [
     duracao: "1H30",
     valor: 549,
     img: "/servicos/cronograma-capilar.png",
-    filterId: 3,
+    filterId: 7,
   },
   {
     id: 17,
@@ -303,12 +303,586 @@ export const servicos = [
     duracao: "-",
     valor: "-",
     img: "/servicos/tratamentos-capilares.png",
+    filterId: 7,
+  },
+  // Dermatologia
+  {
+    id: 18,
+    titulo: "CONSULTA DERMATOLÓGICA",
+    desc: "O dermatologista é o médico responsável pelo tratamento e prevenção de doenças da pele, pelos, cabelos e unhas. Além disso, este médico orienta seus pacientes sobre cuidados gerais com a pele e realiza procedimentos estéticos.",
+    serv: null,
+    duracao: "-",
+    valor: "-",
+    img: "/servicos/dermatologia2.png",
+    filterId: 2,
+  },
+  {
+    id: 19,
+    titulo: "CIRURGIA DERMATOLÓGICA",
+    desc: "A Cirurgia Dermatológica é a área da Dermatologia especializada em procedimentos diagnósticos, cirúrgicos, estéticos e oncológicos realizados na pele ou no tecido celular subcutâneo, que têm por objetivo prevenir, restaurar e manter a saúde de sua pele, cabelo ou unhas.",
+
+    serv: null,
+    duracao: "-",
+    valor: "-",
+    img: "/servicos/dermatologia.png",
+    filterId: 2,
+  },
+  //ESTÉTICA AVANÇADA
+  {
+    id: 20,
+    titulo: "HARMONIZAÇÃO FACIAL",
+    desc: "Área da estética que cuida do embelezamento facial com foco na jovialidade. Botox, Preenchimento, Bioestimuladores de Colágeno, Fios de sustentação, Lipoquimica de Papada, Skinbooster, Mesoterapia.",
+
+    serv: null,
+    duracao: "-",
+    valor: "-",
+    img: "/servicos/harmonizacao3.png",
     filterId: 3,
+  },
+  {
+    id: 21,
+    titulo: "HARMONIZAÇÃO CORPORAL E ÍNTIMA",
+    desc: "Área da Estética que visa tratar disfunções estéticas corporais e proporcionar o rejuvenescimento. Tratamento de celulite, Flacidez e Gordura Localizada, Preenchimento Corporal",
+
+    serv: null,
+    duracao: "-",
+    valor: "-",
+    img: "/servicos/harmonizacao2.png",
+    filterId: 3,
+  },
+  {
+    id: 22,
+    titulo: "TECNOLOGIAS AVANÇADAS",
+    desc: "A Rennovi® é pioneira em tecnologias estéticas que proporcionam resultados de alta performance no embelezamento da face e corpo. ATRIA, LASER SOLON VISIONARY, ÔNIX DUET, CRIODERMIS, LIGHT PULSE.",
+
+    serv: null,
+    duracao: "-",
+    valor: "-",
+    img: "/servicos/harmonizacao.png",
+    filterId: 3,
+  },
+  // DEPILAÇÃO FEMININO
+  {
+    id: 23,
+    titulo: "BUÇO",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 50,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 4,
+  },
+  {
+    id: 24,
+    titulo: "QUEIXO",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 50,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 4,
+  },
+  {
+    id: 25,
+    titulo: "FACE",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 120,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 4,
+  },
+  {
+    id: 26,
+    titulo: "AXILA",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 90,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 4,
+  },
+  {
+    id: 27,
+    titulo: "ANTEBRAÇO",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 150,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 4,
+  },
+  {
+    id: 28,
+    titulo: "LINHA ALBA",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 50,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 4,
+  },
+  {
+    id: 29,
+    titulo: "VIRILHA SIMPLES",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 100,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 4,
+  },
+  {
+    id: 30,
+    titulo: "VIRILHA COMPLETA",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 150,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 4,
+  },
+  {
+    id: 31,
+    titulo: "COXAS",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 300,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 4,
+  },
+  {
+    id: 32,
+    titulo: "PERNA",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 250,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 4,
+  },
+  {
+    id: 33,
+    titulo: "COXA + PERNA",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 500,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 4,
+  },
+  {
+    id: 34,
+    titulo: "PÉ + DEDO",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 50,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 4,
+  },
+  {
+    id: 35,
+    titulo: "GLÚTEOS",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 150,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 4,
+  },
+  {
+    id: 36,
+    titulo: "AREOLAS",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 50,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 4,
+  },
+  {
+    id: 37,
+    titulo: "MÃOS + DEDOS",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 50,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 4,
+  },
+  {
+    id: 38,
+    titulo: "ENTRE SOBRANCELHAS",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 50,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 4,
+  },
+  // DEPILAÇÃO MASCULINO
+  {
+    id: 39,
+    titulo: "BARBA COMPLETA",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 250,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 5,
+  },
+  {
+    id: 40,
+    titulo: "COSTELETAS",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 90,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 5,
+  },
+  {
+    id: 41,
+    titulo: "PESCOÇO",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 130,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 5,
+  },
+  {
+    id: 42,
+    titulo: "ORELHAS",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 50,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 5,
+  },
+  {
+    id: 43,
+    titulo: "ENTRE SOBRANCELHAS",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 40,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 5,
+  },
+  {
+    id: 44,
+    titulo: "AXILA",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 100,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 5,
+  },
+  {
+    id: 45,
+    titulo: "BRAÇO",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 150,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 5,
+  },
+  {
+    id: 46,
+    titulo: "OMBRO",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 200,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 5,
+  },
+  {
+    id: 47,
+    titulo: "PEITO",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 250,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 5,
+  },
+  {
+    id: 48,
+    titulo: "COSTAS INTEIRA",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 500,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 5,
+  },
+  {
+    id: 49,
+    titulo: "COSTAS SUPERIOR",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 300,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 5,
+  },
+  {
+    id: 50,
+    titulo: "COXA",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 300,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 5,
+  },
+  {
+    id: 51,
+    titulo: "PERNA",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 300,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 5,
+  },
+  {
+    id: 52,
+    titulo: "COXA + PERNA",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 550,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 5,
+  },
+  {
+    id: 53,
+    titulo: "GLÚTEOS",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 190,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 5,
+  },
+  // ODONTOLOGIA
+  {
+    id: 54,
+    titulo: "CLÍNICA GERAL",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: "--",
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 6,
+  },
+  {
+    id: 55,
+    titulo: "IMPLANTES DENTÁRIOS",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: "--",
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 6,
+  },
+  {
+    id: 56,
+    titulo: "PRÓTESES DENTÁRIAS",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: "--",
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 6,
+  },
+  {
+    id: 57,
+    titulo: "ORTODONTIA",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: "--",
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 6,
+  },
+  {
+    id: 58,
+    titulo: "PACIENTES ESPECIAIS",
+    desc: "Down, Altista, Hipertensos, Diabéticos, Hipercolesterolemia.",
+
+    serv: null,
+    duracao: "-",
+    valor: "--",
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 6,
+  },
+  {
+    id: 59,
+    titulo: "ESTÉTICA DO SORRISO",
+    desc: "Clareamento Dental, Facetas de Resina e Porcelana, Bichectomia, Gengivoplastia, Restaurações Estéticas.",
+
+    serv: null,
+    duracao: "-",
+    valor: "--",
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 6,
+  },
+  // ADICIONAR DO SPA POR QUE FALTOU
+  {
+    id: 60,
+    titulo: "PELLING FACIAL",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: "--",
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 1,
+  },
+  {
+    id: 61,
+    titulo: "RADIOFREQUÊNCIA FACIAL",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: "--",
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 1,
+  },
+  // TERAPIA CAPILAR
+  {
+    id: 15,
+    titulo: "AVALIAÇÃO DO CABELO",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: "GRATUITO",
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 7,
+  },
+  {
+    id: 63,
+    titulo: "DETOX CAPILAR",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 120,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 7,
+  },
+  {
+    id: 64,
+    titulo: "MICROAGULHAMENTO CAPILAR",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 250,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 7,
+  },
+  {
+    id: 65,
+    titulo: "REPOSIÇÃO HÍDRICA E LIPÍDICA",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 100,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 7,
+  },
+  {
+    id: 66,
+    titulo: "MESOTERAPIA CAPILAR (INFUSÃO DE MEDICAMENTOS)",
+    desc: "",
+
+    serv: null,
+    duracao: "-",
+    valor: 300,
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 7,
+  },
+  // NUTRIÇÃO
+  {
+    id: 67,
+    titulo: "PLANO ALIMENTAR PERSONALIZADO",
+    desc: "Emagrecimento, Nutrição Esportiva e Nutrição Clínica Funcional.",
+
+    serv: null,
+    duracao: "-",
+    valor: "",
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 8,
+  },
+  // NUTROLOGIA
+  {
+    id: 68,
+    titulo: "NUTROLOGIA",
+    desc: "Emagrecimento, Hipertrofia, Implantes Hormonais.",
+
+    serv: null,
+    duracao: "-",
+    valor: "",
+    img: "/servicos/tratamentos-capilares.png",
+    filterId: 9,
   },
 ];
 
 // especificacoes filtros
-// 1 - Day Spa
-// 2 - Massagem
-// 3 - Tratamentos capilares
-// 4 - Relaxamento
+// 1 - The Spa
+// 2 - Dermatologia
+// 3 - Estética Avançada
+// 4 - Depilação a Laser - Feminino
+// 5 - DEPILAÇÃO A LASER - MASCULINO
+// 6 - ODONTOLOGIA
+// 7 - TERAPIA CAPILAR
+// 8 - NUTRIÇÃO
+// 9 - NUTROLOGIA

@@ -64,16 +64,6 @@ function Header() {
         ))}
       </ul>
       <div className="md:hidden flex flex-1 justify-end items-center mx-4">
-        {/* <Image
-          src={toggle ? "/close.svg" : "/menu.svg"}
-          width={25}
-          height={25}
-          alt="menu"
-          onClick={() => setToggle((prev) => !prev)}
-          className={`${
-            router.pathname === `/servicos` ? "text-white" : "text-black"
-          }`}
-        /> */}
         <div onClick={() => setToggle((prev) => !prev)}>
           {toggle ? (
             <AiOutlineClose

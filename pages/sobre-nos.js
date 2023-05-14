@@ -30,7 +30,7 @@ function SobreNos() {
   return (
     <div className="min-h-screen bg-[#2E2E2E] text-white">
       <Head>
-        <title>Clínica Rennovi | Sobre Nós</title>
+        <title>Clínica Rennovi® | Sobre Nós</title>
         <meta name="description" content="by medusa" />
         <link rel="icon" href="/logos/renoviicon.png" />
       </Head>

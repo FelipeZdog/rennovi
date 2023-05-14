@@ -17,10 +17,15 @@ function Servicos() {
 
   const options = [
     { value: null, label: "TODOS" },
-    { value: 1, label: "DAY SPA" },
-    { value: 2, label: "MASSAGEM" },
-    { value: 3, label: "TRATAMENTOS CAPILARES" },
-    { value: 4, label: "RELAXAMENTO" },
+    { value: 1, label: "THE SPA" },
+    { value: 2, label: "DERMATOLOGIA" },
+    { value: 3, label: "ESTÉTICA AVANÇADA" },
+    { value: 4, label: "DEPILAÇÃO A LASER - FEMININO" },
+    { value: 5, label: "DEPILAÇÃO A LASER - MASCULINO" },
+    { value: 6, label: "ODONTOLOGIA" },
+    { value: 7, label: "TERAPIA CAPILAR" },
+    { value: 8, label: "NUTRIÇÃO" },
+    { value: 9, label: "NUTROLOGIA" },
   ];
 
   const totalPages = Math.ceil(servicosFiltrados.length / itemsPerPage);
@@ -68,7 +73,7 @@ function Servicos() {
   return (
     <div className="min-h-screen">
       <Head>
-        <title>Clínica Rennovi | Serviços</title>
+        <title>Clínica Rennovi® | Serviços</title>
         <meta name="description" content="by medusa" />
         <link rel="icon" href="/logos/renoviicon.png" />
       </Head>
@@ -115,7 +120,7 @@ function Servicos() {
                   i + 1 === currentPage
                     ? "bg-black text-white"
                     : "bg-white text-black"
-                } font-normal cursor-pointer py-2 px-4 rounded-full`}
+                } font-normal cursor-pointer py-2 px-4 rounded-full page-number`}
                 onClick={() => handlePageChange(i + 1)}
               >
                 {i + 1}

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       <Head>
-        <title>Clínica Rennovi | Início</title>
+        <title>Clínica Rennovi® | Início</title>
         <meta name="description" content="by medusa" />
         <link rel="icon" href="/logos/renoviicon.png" />
       </Head>

@@ -8,7 +8,6 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 function Header() {
   const [toggle, setToggle] = useState(false);
   const router = useRouter();
-
   const [showDropdown, setShowDropdown] = useState(false);
 
   const handleDropdown = () => {
@@ -90,19 +89,23 @@ function Header() {
       </ul>
 
       <div //caixa do menu hamburguer
-        className="md:hidden flex flex-1 justify-end items-center mx-4"
+        className="md:hidden flex flex-1 justify-end items-center mx-4 text-black"
       >
         <div onClick={() => setToggle((prev) => !prev)}>
           {toggle ? (
             <AiOutlineClose
               className={`${
-                router.pathname === `/servicos` ? "text-white" : "text-black"
+                router.pathname.startsWith("/servicos/")
+                  ? "text-white"
+                  : "text-black"
               } text-[25px]`}
             />
           ) : (
             <AiOutlineMenu
               className={`${
-                router.pathname === `/servicos` ? "text-white" : "text-black"
+                router.pathname.startsWith("/servicos/")
+                  ? "text-white"
+                  : "text-black"
               } text-[25px]`}
             />
           )}
@@ -113,19 +116,43 @@ function Header() {
             toggle ? "flex" : "hidden"
           } p-6 bg-black absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
         >
-          <ul className="list-none flex flex-col justify-end items-center flex-1">
-            {navLinks.map((nav, index) => (
+          <ul className="list-none flex flex-col justify-end items-center">
+            {navLinks.map((nav) => (
               <li
                 key={nav.id}
-                className={`font-normal cursor-pointer text-[16px] ${
-                  router.pathname === `/${nav.id}` ? "underline" : ""
-                } ${
-                  index === navLinks.length - 1 ? "mb-0" : "mb-4"
-                } text-white`}
+                className={`font-normal cursor-pointer sm:text-[12px] md:text-[15px] lg:text-[17px] ${
+                  nav.id === navLinks[navLinks.length - 1].id ? "mr-0" : "mr-0"
+                } ${router.pathname === `/${nav.id}` ? "underline" : ""} ${
+                  router.pathname.startsWith("/servicos/")
+                    ? "text-white"
+                    : "text-white"
+                }`}
+                onClick={() => nav.title === "SERVIÇOS" && handleDropdown()}
               >
-                <Link href={`/${nav.id}`} onClick={() => setToggle(false)}>
-                  {nav.title}
-                </Link>
+                {nav.dropdown ? (
+                  <>
+                    <span>{nav.title}</span>
+                    {showDropdown && (
+                      <ul
+                        className="absolute right-40 w-40 sm:text-[7px] md:text-[13px] lg:text-[16px]  bg-black divide-y divide-gray-00 rounded-md shadow-lg text-white"
+                        onClick={() => setShowDropdown(false)}
+                      >
+                        {nav.dropdown.map((item) => (
+                          <li
+                            key={item.id}
+                            className="hover:bg-gray-100 hover:text-black text-center"
+                          >
+                            <Link href={`/servicos/${item.id}`}>
+                              {item.title}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </>
+                ) : (
+                  <Link href={`/${nav.id}`}>{nav.title}</Link>
+                )}
               </li>
             ))}
           </ul>

@@ -9,20 +9,22 @@ function Header() {
   const [toggle, setToggle] = useState(false);
   const router = useRouter();
 
-  const handleNavLinkClick = (navLinkId) => {
-    setToggle(false);
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const handleDropdown = () => {
+    setShowDropdown(!showDropdown);
   };
 
   return (
     <nav
       className={`w-full flex sticky top-0 z-50 ${
-        router.pathname === `/servicos` ? "bg-black" : "bg-white"
+        router.pathname.startsWith("/servicos/") ? "bg-black" : "bg-white"
       } p-1 lg:p-3 justify-between items-center font-poppins font-semibold"`}
     >
       <Link href="/">
         <Image
           src={`${
-            router.pathname === `/servicos`
+            router.pathname.startsWith("/servicos/")
               ? "/logos/renovi_white.png"
               : "/logos/renovi_black.png"
           }`}
@@ -35,7 +37,7 @@ function Header() {
         />
         <Image
           src={`${
-            router.pathname === `/servicos`
+            router.pathname.startsWith("/servicos/")
               ? "/logos/renovi_white.png"
               : "/logos/renovi_black.png"
           }`}
@@ -52,14 +54,37 @@ function Header() {
         {navLinks.map((nav) => (
           <li
             key={nav.id}
-            className={`font-normal cursor-pointer sm:text-[12px] md:text-[12px] lg:text-[17px] ${
-              router.pathname === `/${nav.id}` ? "underline" : ""
-            } ${
+            className={`font-normal cursor-pointer sm:text-[12px] md:text-[15px] lg:text-[17px] ${
               nav.id === navLinks[navLinks.length - 1].id ? "mr-0" : "mr-10"
-            } ${router.pathname === `/servicos` ? "text-white" : "text-black"}`}
-            onClick={() => handleNavLinkClick(nav.id)}
+            } ${router.pathname === `/${nav.id}` ? "underline" : ""} ${
+              router.pathname.startsWith("/servicos/")
+                ? "text-white"
+                : "text-black"
+            }`}
+            onClick={() => nav.title === "SERVIÇOS" && handleDropdown()}
           >
-            <Link href={`/${nav.id}`}>{nav.title}</Link>
+            {nav.dropdown ? (
+              <>
+                <span>{nav.title}</span>
+                {showDropdown && (
+                  <ul
+                    className="absolute right-40 w-40 sm:text-[10px] md:text-[13px] lg:text-[16px]  bg-black border border-gray-200 divide-y divide-gray-200 rounded-md shadow-lg text-white"
+                    onClick={() => setShowDropdown(false)}
+                  >
+                    {nav.dropdown.map((item) => (
+                      <li
+                        key={item.id}
+                        className="hover:bg-gray-100 hover:text-black text-center"
+                      >
+                        <Link href={`/servicos/${item.id}`}>{item.title}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </>
+            ) : (
+              <Link href={`/${nav.id}`}>{nav.title}</Link>
+            )}
           </li>
         ))}
       </ul>
@@ -68,13 +93,13 @@ function Header() {
           {toggle ? (
             <AiOutlineClose
               className={`${
-                router.pathname === `/servicos` ? "text-white" : "text-black"
+                router.pathname === `/servicos` ? "text-black" : "text-white"
               } text-[25px]`}
             />
           ) : (
             <AiOutlineMenu
               className={`${
-                router.pathname === `/servicos` ? "text-white" : "text-black"
+                router.pathname === `/servicos` ? "text-black" : "text-white"
               } text-[25px]`}
             />
           )}

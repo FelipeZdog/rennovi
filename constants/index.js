@@ -6,6 +6,17 @@ export const navLinks = [
   {
     id: "servicos",
     title: "SERVIÇOS",
+    dropdown: [
+      { id: "dermatologia", title: "DERMATOLOGIA" },
+      { id: "estetica-avancada", title: "ESTÉTICA AVANÇADA" },
+      { id: "depilacao-feminina", title: "DEPILAÇÃO A LASER - FEMININO" },
+      { id: "depilacao-masculina", title: "DEPILAÇÃO A LASER - MASCULINO" },
+      { id: "odontologia", title: "ODONTOLOGIA" },
+      { id: "the-spa", title: "SPA" },
+      { id: "terapia-capilar", title: "TERAPIA CAPILAR" },
+      { id: "nutricao", title: "NUTRIÇÃO" },
+      { id: "nutrologia", title: "NUTROLOGIA" },
+    ],
   },
   {
     id: "sobre-nos",
@@ -13,6 +24,7 @@ export const navLinks = [
   },
 ];
 
+// Slider das máquinas
 export const slider = [
   {
     id: 1,
@@ -43,7 +55,7 @@ export const slider = [
     src: "/slide/SLIDE7.png",
   },
 ];
-
+// Slider dos especialistas
 export const especialistas = [
   {
     id: 11,
@@ -140,7 +152,7 @@ export const servicos = [
     duracao: "3H",
     valor: 430,
     img: "/servicos/day-spa-familia.png",
-    filterId: 1,
+    filterId: "the-spa",
   },
   {
     id: 2,
@@ -150,7 +162,7 @@ export const servicos = [
     duracao: "2H30",
     valor: 285,
     img: "/servicos/day-spa-romantico.png",
-    filterId: 1,
+    filterId: "the-spa",
   },
   {
     id: 3,
@@ -160,7 +172,7 @@ export const servicos = [
     duracao: "6H",
     valor: 718,
     img: "/servicos/day-spa-noivo.png",
-    filterId: 1,
+    filterId: "the-spa",
   },
   {
     id: 4,
@@ -170,7 +182,7 @@ export const servicos = [
     duracao: "6H",
     valor: 997,
     img: "/servicos/day-spa-noiva.png",
-    filterId: 1,
+    filterId: "the-spa",
   },
   {
     id: 5,
@@ -180,7 +192,7 @@ export const servicos = [
     duracao: "6H",
     valor: 1397,
     img: "/servicos/day-spa-noiva-acompanhante.png",
-    filterId: 1,
+    filterId: "the-spa",
   },
   {
     id: 6,
@@ -190,7 +202,7 @@ export const servicos = [
     duracao: "40M",
     valor: 80,
     img: "/servicos/kids-massagem.png",
-    filterId: 1,
+    filterId: "the-spa",
   },
   {
     id: 7,
@@ -200,7 +212,7 @@ export const servicos = [
     duracao: "1H",
     valor: 100,
     img: "/servicos/slim-bambu.png",
-    filterId: 1,
+    filterId: "the-spa",
   },
   {
     id: 9,
@@ -210,7 +222,7 @@ export const servicos = [
     duracao: "1H",
     valor: 100,
     img: "/servicos/massagem-terapeutica.png",
-    filterId: 1,
+    filterId: "the-spa",
   },
   {
     id: 8,
@@ -220,7 +232,7 @@ export const servicos = [
     duracao: "1H30",
     valor: 120,
     img: "/servicos/pedras-quentes.png",
-    filterId: 1,
+    filterId: "the-spa",
   },
 
   {
@@ -231,7 +243,7 @@ export const servicos = [
     duracao: "1H30",
     valor: 120,
     img: "/servicos/drenagem-linfatica.png",
-    filterId: 1,
+    filterId: "the-spa",
   },
   {
     id: 11,
@@ -241,7 +253,7 @@ export const servicos = [
     duracao: "1H30",
     valor: 120,
     img: "/servicos/limpeza-pele.png",
-    filterId: 1,
+    filterId: "the-spa",
   },
   {
     id: 12,
@@ -251,7 +263,7 @@ export const servicos = [
     duracao: "1H",
     valor: 120,
     img: "/servicos/ventosas.png",
-    filterId: 1,
+    filterId: "the-spa",
   },
   {
     id: 13,
@@ -261,49 +273,7 @@ export const servicos = [
     duracao: "30M",
     valor: 110,
     img: "/servicos/banho-oceania.png",
-    filterId: 1,
-  },
-  {
-    id: 14,
-    titulo: "LAVAGEM TERAPÊUTICA",
-    desc: "Indicado para higienizar profundamente o couro cabeludo e cabelos e preparar para tratamentos injetáveis.",
-    serv: "Sauna capilar, e cromoterapia, higienização e esfoliaçao do couro cabeludo com a linha Grandha spa, altafrequência e ledterapia.",
-    duracao: "1H30",
-    valor: 100,
-    img: "/servicos/lavagem-terapeutica.png",
-    filterId: 1,
-  },
-  {
-    id: 62,
-    titulo: "PEELING CAPILAR",
-    desc: "Ritual capilar indicado para higienização profunda do couro cabeludo com seborreia e caspas que melhora a circulação sanguínea trazendo nutrientes para a região, hidratação e fortalecimento dos fios com geoterapia, alta frequência e óleo de melaleuca.",
-    serv: null,
-    duracao: "2H",
-    valor: 150,
-    img: "/servicos/peeling-capilar.png",
-    filterId: 7,
-  },
-  {
-    id: 16,
-    titulo: "CRONOGRAMA CAPILAR",
-    desc: "Sequência de tratamentos terapêuticos para recuperar a hidratação, nutrição e saude dos cabelos. Indicado para cabelos danificados por química. (5 sessões/ semanais)",
-    serv: null,
-    duracao: "1H30",
-    valor: 549,
-    img: "/servicos/cronograma-capilar.png",
-    filterId: 7,
-  },
-  {
-    id: 17,
-    titulo:
-      "TRATAMENTOS CAPILARES REALIZADOS MEDIANTE CONSULTA COM ESPECIALISTA.",
-    desc: "• Dermatite e focos inflamatorios no couro cabeludo;\n• Alopecia androgenética;\n• Focos inflamatórios e crostas em Mega Hair;\n• Queda de cabelo por estresse e/ou ansiedade;\n• Cabelos danificados por química.",
-
-    serv: null,
-    duracao: "-",
-    valor: "-",
-    img: "/servicos/tratamentos-capilares.png",
-    filterId: 7,
+    filterId: "the-spa",
   },
   // Dermatologia
   {
@@ -314,7 +284,7 @@ export const servicos = [
     duracao: "-",
     valor: "-",
     img: "/servicos/dermatologia2.png",
-    filterId: 2,
+    filterId: "dermatologia",
   },
   {
     id: 19,
@@ -325,7 +295,7 @@ export const servicos = [
     duracao: "-",
     valor: "-",
     img: "/servicos/dermatologia.png",
-    filterId: 2,
+    filterId: "dermatologia",
   },
   //ESTÉTICA AVANÇADA
   {
@@ -337,7 +307,7 @@ export const servicos = [
     duracao: "-",
     valor: "-",
     img: "/servicos/harmonizacao3.png",
-    filterId: 3,
+    filterId: "estetica-avancada",
   },
   {
     id: 21,
@@ -348,7 +318,7 @@ export const servicos = [
     duracao: "-",
     valor: "-",
     img: "/servicos/harmonizacao2.png",
-    filterId: 3,
+    filterId: "estetica-avancada",
   },
   {
     id: 22,
@@ -359,184 +329,183 @@ export const servicos = [
     duracao: "-",
     valor: "-",
     img: "/servicos/harmonizacao.png",
-    filterId: 3,
+    filterId: "estetica-avancada",
   },
   // DEPILAÇÃO FEMININO
   {
     id: 23,
     titulo: "BUÇO",
-    desc: "",
-
+    desc: "Processo de depilação do buço feminino por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
     serv: null,
     duracao: "-",
     valor: 50,
-    img: "/servicos/tratamentos-capilares.png",
-    filterId: 4,
+    img: "/servicos/buco.png",
+    filterId: "depilacao-feminina",
   },
   {
     id: 24,
     titulo: "QUEIXO",
-    desc: "",
+    desc: "Processo de depilação do queixo feminino por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
     duracao: "-",
     valor: 50,
-    img: "/servicos/tratamentos-capilares.png",
-    filterId: 4,
+    img: "/servicos/queixo.png",
+    filterId: "depilacao-feminina",
   },
   {
     id: 25,
     titulo: "FACE",
-    desc: "",
+    desc: "Processo de depilação da face feminina por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
     duracao: "-",
     valor: 120,
-    img: "/servicos/tratamentos-capilares.png",
-    filterId: 4,
+    img: "/servicos/face.png",
+    filterId: "depilacao-feminina",
   },
   {
     id: 26,
     titulo: "AXILA",
-    desc: "",
+    desc: "Processo de depilação das axilas femininas por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
     duracao: "-",
     valor: 90,
-    img: "/servicos/tratamentos-capilares.png",
-    filterId: 4,
+    img: "/servicos/axila.png",
+    filterId: "depilacao-feminina",
   },
   {
     id: 27,
     titulo: "ANTEBRAÇO",
-    desc: "",
+    desc: "Processo de depilação do antebraço feminino por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
     duracao: "-",
     valor: 150,
-    img: "/servicos/tratamentos-capilares.png",
-    filterId: 4,
+    img: "/servicos/antebraco.png",
+    filterId: "depilacao-feminina",
   },
   {
     id: 28,
     titulo: "LINHA ALBA",
-    desc: "",
+    desc: "Processo de depilação da linha alba feminina por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
     duracao: "-",
     valor: 50,
-    img: "/servicos/tratamentos-capilares.png",
-    filterId: 4,
+    img: "/servicos/alba.png",
+    filterId: "depilacao-feminina",
   },
   {
     id: 29,
     titulo: "VIRILHA SIMPLES",
-    desc: "",
+    desc: "Processo de depilação simples de virilha feminina por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
     duracao: "-",
     valor: 100,
-    img: "/servicos/tratamentos-capilares.png",
-    filterId: 4,
+    img: "/servicos/virilhasimples.png",
+    filterId: "depilacao-feminina",
   },
   {
     id: 30,
     titulo: "VIRILHA COMPLETA",
-    desc: "",
+    desc: "Processo de depilação completa da virilha feminina por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
     duracao: "-",
     valor: 150,
-    img: "/servicos/tratamentos-capilares.png",
-    filterId: 4,
+    img: "/servicos/virilhacompleta.png",
+    filterId: "depilacao-feminina",
   },
   {
     id: 31,
     titulo: "COXAS",
-    desc: "",
+    desc: "Processo de depilação de coxas femininas por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
     duracao: "-",
     valor: 300,
-    img: "/servicos/tratamentos-capilares.png",
-    filterId: 4,
+    img: "/servicos/coxas.png",
+    filterId: "depilacao-feminina",
   },
   {
     id: 32,
     titulo: "PERNA",
-    desc: "",
+    desc: "Processo de depilação de pernas femininas por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
     duracao: "-",
     valor: 250,
-    img: "/servicos/tratamentos-capilares.png",
-    filterId: 4,
+    img: "/servicos/perna.png",
+    filterId: "depilacao-feminina",
   },
   {
     id: 33,
     titulo: "COXA + PERNA",
-    desc: "",
+    desc: "Processo de depilação de coxa e perna feminina por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
     duracao: "-",
     valor: 500,
-    img: "/servicos/tratamentos-capilares.png",
-    filterId: 4,
+    img: "/servicos/coxaeperna.png",
+    filterId: "depilacao-feminina",
   },
   {
     id: 34,
     titulo: "PÉ + DEDO",
-    desc: "",
+    desc: "Processo de depilação de pés e dedos femininos por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
     duracao: "-",
     valor: 50,
-    img: "/servicos/tratamentos-capilares.png",
-    filterId: 4,
+    img: "/servicos/pé.png",
+    filterId: "depilacao-feminina",
   },
   {
     id: 35,
     titulo: "GLÚTEOS",
-    desc: "",
+    desc: "Processo de depilação dos glúteos femininos por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
     duracao: "-",
     valor: 150,
-    img: "/servicos/tratamentos-capilares.png",
-    filterId: 4,
+    img: "/servicos/gluteos.png",
+    filterId: "depilacao-feminina",
   },
   {
     id: 36,
-    titulo: "AREOLAS",
-    desc: "",
+    titulo: "ARÉOLAS",
+    desc: "Processo de depilação das aréolas femininas por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
     duracao: "-",
     valor: 50,
-    img: "/servicos/tratamentos-capilares.png",
-    filterId: 4,
+    img: "/servicos/areola.png",
+    filterId: "depilacao-feminina",
   },
   {
     id: 37,
     titulo: "MÃOS + DEDOS",
-    desc: "",
+    desc: "Processo de depilação de mãos e dedos femininos por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
     duracao: "-",
     valor: 50,
-    img: "/servicos/tratamentos-capilares.png",
-    filterId: 4,
+    img: "/servicos/mao.png",
+    filterId: "depilacao-feminina",
   },
   {
     id: 38,
     titulo: "ENTRE SOBRANCELHAS",
-    desc: "",
+    desc: "Processo de depilação entre sobrancelhas feminino por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
     duracao: "-",
     valor: 50,
-    img: "/servicos/tratamentos-capilares.png",
-    filterId: 4,
+    img: "/servicos/sobrancelha.png",
+    filterId: "depilacao-feminina",
   },
   // DEPILAÇÃO MASCULINO
   {
@@ -548,7 +517,7 @@ export const servicos = [
     duracao: "-",
     valor: 250,
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 5,
+    filterId: "depilacao-masculina",
   },
   {
     id: 40,
@@ -559,7 +528,7 @@ export const servicos = [
     duracao: "-",
     valor: 90,
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 5,
+    filterId: "depilacao-masculina",
   },
   {
     id: 41,
@@ -570,7 +539,7 @@ export const servicos = [
     duracao: "-",
     valor: 130,
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 5,
+    filterId: "depilacao-masculina",
   },
   {
     id: 42,
@@ -581,7 +550,7 @@ export const servicos = [
     duracao: "-",
     valor: 50,
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 5,
+    filterId: "depilacao-masculina",
   },
   {
     id: 43,
@@ -592,7 +561,7 @@ export const servicos = [
     duracao: "-",
     valor: 40,
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 5,
+    filterId: "depilacao-masculina",
   },
   {
     id: 44,
@@ -603,7 +572,7 @@ export const servicos = [
     duracao: "-",
     valor: 100,
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 5,
+    filterId: "depilacao-masculina",
   },
   {
     id: 45,
@@ -614,7 +583,7 @@ export const servicos = [
     duracao: "-",
     valor: 150,
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 5,
+    filterId: "depilacao-masculina",
   },
   {
     id: 46,
@@ -625,7 +594,7 @@ export const servicos = [
     duracao: "-",
     valor: 200,
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 5,
+    filterId: "depilacao-masculina",
   },
   {
     id: 47,
@@ -636,7 +605,7 @@ export const servicos = [
     duracao: "-",
     valor: 250,
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 5,
+    filterId: "depilacao-masculina",
   },
   {
     id: 48,
@@ -647,7 +616,7 @@ export const servicos = [
     duracao: "-",
     valor: 500,
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 5,
+    filterId: "depilacao-masculina",
   },
   {
     id: 49,
@@ -658,7 +627,7 @@ export const servicos = [
     duracao: "-",
     valor: 300,
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 5,
+    filterId: "depilacao-masculina",
   },
   {
     id: 50,
@@ -669,7 +638,7 @@ export const servicos = [
     duracao: "-",
     valor: 300,
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 5,
+    filterId: "depilacao-masculina",
   },
   {
     id: 51,
@@ -680,7 +649,7 @@ export const servicos = [
     duracao: "-",
     valor: 300,
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 5,
+    filterId: "depilacao-masculina",
   },
   {
     id: 52,
@@ -691,7 +660,7 @@ export const servicos = [
     duracao: "-",
     valor: 550,
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 5,
+    filterId: "depilacao-masculina",
   },
   {
     id: 53,
@@ -702,7 +671,7 @@ export const servicos = [
     duracao: "-",
     valor: 190,
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 5,
+    filterId: "depilacao-masculina",
   },
   // ODONTOLOGIA
   {
@@ -714,7 +683,7 @@ export const servicos = [
     duracao: "-",
     valor: "--",
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 6,
+    filterId: "odontologia",
   },
   {
     id: 55,
@@ -725,7 +694,7 @@ export const servicos = [
     duracao: "-",
     valor: "--",
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 6,
+    filterId: "odontologia",
   },
   {
     id: 56,
@@ -736,7 +705,7 @@ export const servicos = [
     duracao: "-",
     valor: "--",
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 6,
+    filterId: "odontologia",
   },
   {
     id: 57,
@@ -747,7 +716,7 @@ export const servicos = [
     duracao: "-",
     valor: "--",
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 6,
+    filterId: "odontologia",
   },
   {
     id: 58,
@@ -758,7 +727,7 @@ export const servicos = [
     duracao: "-",
     valor: "--",
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 6,
+    filterId: "odontologia",
   },
   {
     id: 59,
@@ -769,7 +738,7 @@ export const servicos = [
     duracao: "-",
     valor: "--",
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 6,
+    filterId: "odontologia",
   },
   // ADICIONAR DO SPA POR QUE FALTOU
   {
@@ -781,7 +750,7 @@ export const servicos = [
     duracao: "-",
     valor: "--",
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 1,
+    filterId: "the-spa",
   },
   {
     id: 61,
@@ -792,19 +761,19 @@ export const servicos = [
     duracao: "-",
     valor: "--",
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 1,
+    filterId: "the-spa",
   },
   // TERAPIA CAPILAR
   {
-    id: 15,
+    id: 14,
     titulo: "AVALIAÇÃO DO CABELO",
-    desc: "",
+    desc: "Procedimento de avaliação completa do fio, possibilitando a descoberta de toda e qualquer disfunção do dele ou do couro cabeludo, seja oleosidade, ressecamento, falta de volume, volume em excesso, caspa e uma série de outras questões.",
 
     serv: null,
     duracao: "-",
     valor: "GRATUITO",
-    img: "/servicos/tratamentos-capilares.png",
-    filterId: 7,
+    img: "/servicos/avaliacao.png",
+    filterId: "terapia-capilar",
   },
   {
     id: 63,
@@ -815,7 +784,7 @@ export const servicos = [
     duracao: "-",
     valor: 120,
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 7,
+    filterId: "terapia-capilar",
   },
   {
     id: 64,
@@ -826,7 +795,7 @@ export const servicos = [
     duracao: "-",
     valor: 250,
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 7,
+    filterId: "terapia-capilar",
   },
   {
     id: 65,
@@ -837,7 +806,7 @@ export const servicos = [
     duracao: "-",
     valor: 100,
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 7,
+    filterId: "terapia-capilar",
   },
   {
     id: 66,
@@ -848,41 +817,72 @@ export const servicos = [
     duracao: "-",
     valor: 300,
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 7,
+    filterId: "terapia-capilar",
   },
   // NUTRIÇÃO
   {
     id: 67,
     titulo: "PLANO ALIMENTAR PERSONALIZADO",
-    desc: "Emagrecimento, Nutrição Esportiva e Nutrição Clínica Funcional.",
+    desc: " Especialidade da nutrição que visa uma melhor estética do paciente com a conduta nutricional aplicada. Emagrecimento, Nutrição Esportiva e Nutrição Clínica Funcional.",
 
     serv: null,
-    duracao: "-",
-    valor: "",
-    img: "/servicos/tratamentos-capilares.png",
-    filterId: 8,
+    duracao: "--",
+    valor: "--",
+    img: "/servicos/alimentar.png",
+    filterId: "nutricao",
   },
   // NUTROLOGIA
   {
     id: 68,
     titulo: "NUTROLOGIA",
-    desc: "Emagrecimento, Hipertrofia, Implantes Hormonais.",
+    desc: "Nutrologia é a especialidade médica clínica que se dedica ao diagnóstico, prevenção e tratamento de doenças do comportamento alimentar. Emagrecimento, Hipertrofia, Implantes Hormonais.",
+
+    serv: null,
+    duracao: "--",
+    valor: "--",
+    img: "/servicos/nutrologa.png",
+    filterId: "nutrologia",
+  },
+  {
+    id: 69,
+    titulo: "LAVAGEM TERAPÊUTICA",
+    desc: "Indicado para higienizar profundamente o couro cabeludo e cabelos e preparar para tratamentos injetáveis.",
+    serv: "Sauna capilar, e cromoterapia, higienização e esfoliaçao do couro cabeludo com a linha Grandha spa, altafrequência e ledterapia.",
+    duracao: "1H30",
+    valor: 100,
+    img: "/servicos/lavagem-terapeutica.png",
+    filterId: "terapia-capilar",
+  },
+  {
+    id: 62,
+    titulo: "PEELING CAPILAR",
+    desc: "Ritual capilar indicado para higienização profunda do couro cabeludo com seborreia e caspas que melhora a circulação sanguínea trazendo nutrientes para a região, hidratação e fortalecimento dos fios com geoterapia, alta frequência e óleo de melaleuca.",
+    serv: null,
+    duracao: "2H",
+    valor: 150,
+    img: "/servicos/peeling-capilar.png",
+    filterId: "terapia-capilar",
+  },
+  {
+    id: 16,
+    titulo: "CRONOGRAMA CAPILAR",
+    desc: "Sequência de tratamentos terapêuticos para recuperar a hidratação, nutrição e saude dos cabelos. Indicado para cabelos danificados por química. (5 sessões/ semanais)",
+    serv: null,
+    duracao: "1H30",
+    valor: 549,
+    img: "/servicos/cronograma-capilar.png",
+    filterId: "terapia-capilar",
+  },
+  {
+    id: 17,
+    titulo:
+      "TRATAMENTOS CAPILARES REALIZADOS MEDIANTE CONSULTA COM ESPECIALISTA.",
+    desc: "• Dermatite e focos inflamatorios no couro cabeludo;\n• Alopecia androgenética;\n• Focos inflamatórios e crostas em Mega Hair;\n• Queda de cabelo por estresse e/ou ansiedade;\n• Cabelos danificados por química.",
 
     serv: null,
     duracao: "-",
-    valor: "",
+    valor: "-",
     img: "/servicos/tratamentos-capilares.png",
-    filterId: 9,
+    filterId: "terapia-capilar",
   },
 ];
-
-// especificacoes filtros
-// 1 - The Spa
-// 2 - Dermatologia
-// 3 - Estética Avançada
-// 4 - Depilação a Laser - Feminino
-// 5 - DEPILAÇÃO A LASER - MASCULINO
-// 6 - ODONTOLOGIA
-// 7 - TERAPIA CAPILAR
-// 8 - NUTRIÇÃO
-// 9 - NUTROLOGIA

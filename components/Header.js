@@ -88,24 +88,27 @@ function Header() {
           </li>
         ))}
       </ul>
-      <div className="md:hidden flex flex-1 justify-end items-center mx-4">
+
+      <div //caixa do menu hamburguer
+        className="md:hidden flex flex-1 justify-end items-center mx-4"
+      >
         <div onClick={() => setToggle((prev) => !prev)}>
           {toggle ? (
             <AiOutlineClose
               className={`${
-                router.pathname === `/servicos` ? "text-black" : "text-white"
+                router.pathname === `/servicos` ? "text-white" : "text-black"
               } text-[25px]`}
             />
           ) : (
             <AiOutlineMenu
               className={`${
-                router.pathname === `/servicos` ? "text-black" : "text-white"
+                router.pathname === `/servicos` ? "text-white" : "text-black"
               } text-[25px]`}
             />
           )}
         </div>
 
-        <div
+        <div //caixa do submenu
           className={`${
             toggle ? "flex" : "hidden"
           } p-6 bg-black absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}

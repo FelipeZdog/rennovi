@@ -22,7 +22,7 @@ function SobreNos() {
     const number = encodeURIComponent(formData.number);
     const message = encodeURIComponent(formData.message);
     const message2 = `Gostaria de entrar em contato. %0ANome: ${name}%0AEmail: ${email}%0ANúmero: ${number} %0A${message}`;
-    const url = `https://api.whatsapp.com/send?phone=+5585999449009&text=${message2}`;
+    const url = `https://api.whatsapp.com/send?phone=+5585992971826&text=${message2}`;
 
     window.open(url);
   };

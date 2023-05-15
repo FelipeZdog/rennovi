@@ -43,6 +43,13 @@
     background-position: center;
   }
 
+  .banner-web3 {
+    background-repeat: no-repeat;
+    background-image: url("/banner3.jpg");
+    background-size: cover;
+    background-position: bottom;
+  }
+
   .container {
     max-width: 50rem;
     padding: 2rem 1rem;

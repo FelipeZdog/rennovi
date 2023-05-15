@@ -20,7 +20,7 @@ function Banner() {
           cuidado da saúde, beleza e bem estar.
         </p>
         <div className="mt-4">
-          <Link href={`/servicos`}>
+          <Link href={`/sobre-nos`}>
             <Button
               text="Veja mais"
               style="text-[9px] sm:text-[12px] md:text-[15px] lg:text-[20px]"

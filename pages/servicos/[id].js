@@ -11,7 +11,7 @@ function Servicos() {
   return (
     <div className="min-h-screen">
       <div className="banner-web2 h-[35vh] lg:h-[65vh]" />
-      <div className="bg-[#2E2E2E]">
+      <div className="bg-[#222222]">
         <div className="flex flex-col mx-auto max-w-[1080px] justify-center items-center py-16">
           <h1 className="text-white text-3xl sm:text-5xl text-center underline">
             Conheça nossos <span className="font-bold">serviços</span>

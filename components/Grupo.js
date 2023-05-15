@@ -77,7 +77,7 @@ function Grupo() {
 
   return (
     <div
-      className="flex flex-col bg-[#2E2E2E] font-poppins text-white py-12 sidebar"
+      className="flex flex-col bg-[#222222] font-poppins text-white py-12 sidebar"
       id="grupo-vip"
     >
       <div className="mx-12">

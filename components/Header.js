@@ -14,6 +14,11 @@ function Header() {
     setShowDropdown(!showDropdown);
   };
 
+  const onclick = () => {
+    setShowDropdown(false);
+    setToggle(false);
+  };
+
   return (
     <nav
       className={`w-full flex sticky top-0 z-50 ${
@@ -135,7 +140,7 @@ function Header() {
                     {showDropdown && (
                       <ul
                         className="absolute right-40 w-40 sm:text-[7px] md:text-[13px] lg:text-[16px]  bg-black divide-y divide-gray-00 rounded-md shadow-lg text-white"
-                        onClick={() => setShowDropdown(false)}
+                        onClick={onclick}
                       >
                         {nav.dropdown.map((item) => (
                           <li
@@ -151,7 +156,9 @@ function Header() {
                     )}
                   </>
                 ) : (
-                  <Link href={`/${nav.id}`}>{nav.title}</Link>
+                  <Link onClick={onclick} href={`/${nav.id}`}>
+                    {nav.title}
+                  </Link>
                 )}
               </li>
             ))}

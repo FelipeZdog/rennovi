@@ -267,9 +267,9 @@ function SobreNos() {
             </div>
           </div>
         </div>
-        <div className="bg-[#2E2E2E] py-0">
+        <div className="bg-[#222222] py-0">
           <div className="flex flex-col mx-auto max-w-[1080px]">
-            <div className="flex flex-col bg-[#2E2E2E] font-poppins text-white py-6 sm:py-12 sidebar">
+            <div className="flex flex-col bg-[#222222] font-poppins text-white py-6 sm:py-12 sidebar">
               <div className="mx-12 sm:mx-4">
                 <div className="flex justify-center">
                   <h1 className="text-3xl lg:text-4xl lg:w-1/2 text-center select-none">

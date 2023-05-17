@@ -12,7 +12,7 @@ export const navLinks = [
       { id: "Depilacao-feminina", title: "DEPILAÇÃO A LASER - FEMININO" },
       { id: "Depilacao-masculina", title: "DEPILAÇÃO A LASER - MASCULINO" },
       { id: "Odontologia", title: "ODONTOLOGIA" },
-      { id: "The-spa", title: "SPA" },
+      { id: "The-spa", title: "THE SPA" },
       { id: "Terapia-capilar", title: "TERAPIA CAPILAR" },
       { id: "Nutricao", title: "NUTRIÇÃO" },
       { id: "Nutrologia", title: "NUTROLOGIA" },

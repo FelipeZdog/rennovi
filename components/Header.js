@@ -72,13 +72,13 @@ function Header() {
                 <span>{nav.title}</span>
                 {showDropdown && (
                   <ul
-                    className="absolute right-40 w-40 sm:text-[10px] md:text-[13px] lg:text-[16px]  bg-black border border-gray-200 divide-y divide-gray-200 rounded-md shadow-lg text-white"
+                    className="absolute right-40 w-40 sm:text-[10px] md:text-[13px] lg:text-[16px]  bg-white border border-gray-200 divide-y divide-gray-200 rounded-md shadow-lg text-black"
                     onClick={() => setShowDropdown(false)}
                   >
                     {nav.dropdown.map((item) => (
                       <li
                         key={item.id}
-                        className="hover:bg-gray-100 hover:text-black text-center"
+                        className="hover:bg-black hover:text-white text-center"
                       >
                         <Link href={`/servicos/${item.id}`}>{item.title}</Link>
                       </li>

@@ -1,12 +1,22 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import React, { useState, useEffect } from "react";
 import "../styles/globals.css";
 import { FaWhatsapp } from "react-icons/fa";
 
 function MyApp({ Component, pageProps }) {
+  const [showMessage, setShowMessage] = useState(true);
   const text = "Olá, poderia me ajudar ?";
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowMessage(false);
+    }, 10000);
+  }, []);
+
   return (
     <div>
+      {showMessage && <div className="floating-message">Tire suas dúvidas</div>}
       <Header />
       <Component {...pageProps} />
       <a

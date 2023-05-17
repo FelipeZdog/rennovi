@@ -4,18 +4,18 @@ export const navLinks = [
     title: "INÍCIO",
   },
   {
-    id: "servicos",
+    id: "Servicos",
     title: "SERVIÇOS",
     dropdown: [
-      { id: "dermatologia", title: "DERMATOLOGIA" },
-      { id: "estetica-avancada", title: "ESTÉTICA AVANÇADA" },
-      { id: "depilacao-feminina", title: "DEPILAÇÃO A LASER - FEMININO" },
-      { id: "depilacao-masculina", title: "DEPILAÇÃO A LASER - MASCULINO" },
-      { id: "odontologia", title: "ODONTOLOGIA" },
-      { id: "the-spa", title: "SPA" },
-      { id: "terapia-capilar", title: "TERAPIA CAPILAR" },
-      { id: "nutricao", title: "NUTRIÇÃO" },
-      { id: "nutrologia", title: "NUTROLOGIA" },
+      { id: "Dermatologia", title: "DERMATOLOGIA" },
+      { id: "Estetica-avancada", title: "ESTÉTICA AVANÇADA" },
+      { id: "Depilacao-feminina", title: "DEPILAÇÃO A LASER - FEMININO" },
+      { id: "Depilacao-masculina", title: "DEPILAÇÃO A LASER - MASCULINO" },
+      { id: "Odontologia", title: "ODONTOLOGIA" },
+      { id: "The-spa", title: "SPA" },
+      { id: "Terapia-capilar", title: "TERAPIA CAPILAR" },
+      { id: "Nutricao", title: "NUTRIÇÃO" },
+      { id: "Nutrologia", title: "NUTROLOGIA" },
     ],
   },
   {
@@ -152,7 +152,7 @@ export const servicos = [
     duracao: "3H",
     valor: 430,
     img: "/servicos/day-spa-familia.png",
-    filterId: "the-spa",
+    filterId: "The-spa",
   },
   {
     id: 2,
@@ -162,7 +162,7 @@ export const servicos = [
     duracao: "2H30",
     valor: 285,
     img: "/servicos/day-spa-romantico.png",
-    filterId: "the-spa",
+    filterId: "The-spa",
   },
   {
     id: 3,
@@ -172,7 +172,7 @@ export const servicos = [
     duracao: "6H",
     valor: 718,
     img: "/servicos/day-spa-noivo.png",
-    filterId: "the-spa",
+    filterId: "The-spa",
   },
   {
     id: 4,
@@ -182,7 +182,7 @@ export const servicos = [
     duracao: "6H",
     valor: 997,
     img: "/servicos/day-spa-noiva.png",
-    filterId: "the-spa",
+    filterId: "The-spa",
   },
   {
     id: 5,
@@ -192,7 +192,7 @@ export const servicos = [
     duracao: "6H",
     valor: 1397,
     img: "/servicos/day-spa-noiva-acompanhante.png",
-    filterId: "the-spa",
+    filterId: "The-spa",
   },
   {
     id: 6,
@@ -202,7 +202,7 @@ export const servicos = [
     duracao: "40M",
     valor: 80,
     img: "/servicos/kids-massagem.png",
-    filterId: "the-spa",
+    filterId: "The-spa",
   },
   {
     id: 7,
@@ -212,7 +212,7 @@ export const servicos = [
     duracao: "1H",
     valor: 100,
     img: "/servicos/slim-bambu.png",
-    filterId: "the-spa",
+    filterId: "The-spa",
   },
   {
     id: 9,
@@ -222,7 +222,7 @@ export const servicos = [
     duracao: "1H",
     valor: 100,
     img: "/servicos/massagem-terapeutica.png",
-    filterId: "the-spa",
+    filterId: "The-spa",
   },
   {
     id: 8,
@@ -232,7 +232,7 @@ export const servicos = [
     duracao: "1H30",
     valor: 120,
     img: "/servicos/pedras-quentes.png",
-    filterId: "the-spa",
+    filterId: "The-spa",
   },
 
   {
@@ -243,7 +243,7 @@ export const servicos = [
     duracao: "1H30",
     valor: 120,
     img: "/servicos/drenagem-linfatica.png",
-    filterId: "the-spa",
+    filterId: "The-spa",
   },
   {
     id: 11,
@@ -253,7 +253,7 @@ export const servicos = [
     duracao: "1H30",
     valor: 120,
     img: "/servicos/limpeza-pele.png",
-    filterId: "the-spa",
+    filterId: "The-spa",
   },
   {
     id: 12,
@@ -263,7 +263,7 @@ export const servicos = [
     duracao: "1H",
     valor: 120,
     img: "/servicos/ventosas.png",
-    filterId: "the-spa",
+    filterId: "The-spa",
   },
   {
     id: 13,
@@ -273,7 +273,7 @@ export const servicos = [
     duracao: "30M",
     valor: 110,
     img: "/servicos/banho-oceania.png",
-    filterId: "the-spa",
+    filterId: "The-spa",
   },
   // Dermatologia
   {
@@ -284,7 +284,7 @@ export const servicos = [
     duracao: "-",
     valor: "-",
     img: "/servicos/dermatologia2.png",
-    filterId: "dermatologia",
+    filterId: "Dermatologia",
   },
   {
     id: 19,
@@ -295,7 +295,7 @@ export const servicos = [
     duracao: "-",
     valor: "-",
     img: "/servicos/dermatologia.png",
-    filterId: "dermatologia",
+    filterId: "Dermatologia",
   },
   //ESTÉTICA AVANÇADA
   {
@@ -307,7 +307,7 @@ export const servicos = [
     duracao: "-",
     valor: "-",
     img: "/servicos/harmonizacao3.png",
-    filterId: "estetica-avancada",
+    filterId: "Estetica-avancada",
   },
   {
     id: 21,
@@ -318,7 +318,7 @@ export const servicos = [
     duracao: "-",
     valor: "-",
     img: "/servicos/harmonizacao2.png",
-    filterId: "estetica-avancada",
+    filterId: "Estetica-avancada",
   },
   {
     id: 22,
@@ -329,7 +329,7 @@ export const servicos = [
     duracao: "-",
     valor: "-",
     img: "/servicos/harmonizacao.png",
-    filterId: "estetica-avancada",
+    filterId: "Estetica-avancada",
   },
   // DEPILAÇÃO FEMININO
   {
@@ -340,7 +340,7 @@ export const servicos = [
     duracao: "-",
     valor: 50,
     img: "/servicos/buco.png",
-    filterId: "depilacao-feminina",
+    filterId: "Depilacao-feminina",
   },
   {
     id: 24,
@@ -351,7 +351,7 @@ export const servicos = [
     duracao: "-",
     valor: 50,
     img: "/servicos/queixo.png",
-    filterId: "depilacao-feminina",
+    filterId: "Depilacao-feminina",
   },
   {
     id: 25,
@@ -362,7 +362,7 @@ export const servicos = [
     duracao: "-",
     valor: 120,
     img: "/servicos/face.png",
-    filterId: "depilacao-feminina",
+    filterId: "Depilacao-feminina",
   },
   {
     id: 26,
@@ -373,7 +373,7 @@ export const servicos = [
     duracao: "-",
     valor: 90,
     img: "/servicos/axila.png",
-    filterId: "depilacao-feminina",
+    filterId: "Depilacao-feminina",
   },
   {
     id: 27,
@@ -384,7 +384,7 @@ export const servicos = [
     duracao: "-",
     valor: 150,
     img: "/servicos/antebraco.png",
-    filterId: "depilacao-feminina",
+    filterId: "Depilacao-feminina",
   },
   {
     id: 28,
@@ -395,7 +395,7 @@ export const servicos = [
     duracao: "-",
     valor: 50,
     img: "/servicos/alba.png",
-    filterId: "depilacao-feminina",
+    filterId: "Depilacao-feminina",
   },
   {
     id: 29,
@@ -406,7 +406,7 @@ export const servicos = [
     duracao: "-",
     valor: 100,
     img: "/servicos/virilhasimples.png",
-    filterId: "depilacao-feminina",
+    filterId: "Depilacao-feminina",
   },
   {
     id: 30,
@@ -417,7 +417,7 @@ export const servicos = [
     duracao: "-",
     valor: 150,
     img: "/servicos/virilhacompleta.png",
-    filterId: "depilacao-feminina",
+    filterId: "Depilacao-feminina",
   },
   {
     id: 31,
@@ -428,7 +428,7 @@ export const servicos = [
     duracao: "-",
     valor: 300,
     img: "/servicos/coxas.png",
-    filterId: "depilacao-feminina",
+    filterId: "Depilacao-feminina",
   },
   {
     id: 32,
@@ -439,7 +439,7 @@ export const servicos = [
     duracao: "-",
     valor: 250,
     img: "/servicos/perna.png",
-    filterId: "depilacao-feminina",
+    filterId: "Depilacao-feminina",
   },
   {
     id: 33,
@@ -450,7 +450,7 @@ export const servicos = [
     duracao: "-",
     valor: 500,
     img: "/servicos/coxaeperna.png",
-    filterId: "depilacao-feminina",
+    filterId: "Depilacao-feminina",
   },
   {
     id: 34,
@@ -461,7 +461,7 @@ export const servicos = [
     duracao: "-",
     valor: 50,
     img: "/servicos/pé.png",
-    filterId: "depilacao-feminina",
+    filterId: "Depilacao-feminina",
   },
   {
     id: 35,
@@ -472,7 +472,7 @@ export const servicos = [
     duracao: "-",
     valor: 150,
     img: "/servicos/gluteos.png",
-    filterId: "depilacao-feminina",
+    filterId: "Depilacao-feminina",
   },
   {
     id: 36,
@@ -483,7 +483,7 @@ export const servicos = [
     duracao: "-",
     valor: 50,
     img: "/servicos/areola.png",
-    filterId: "depilacao-feminina",
+    filterId: "Depilacao-feminina",
   },
   {
     id: 37,
@@ -494,7 +494,7 @@ export const servicos = [
     duracao: "-",
     valor: 50,
     img: "/servicos/mao.png",
-    filterId: "depilacao-feminina",
+    filterId: "Depilacao-feminina",
   },
   {
     id: 38,
@@ -505,7 +505,7 @@ export const servicos = [
     duracao: "-",
     valor: 50,
     img: "/servicos/sobrancelha.png",
-    filterId: "depilacao-feminina",
+    filterId: "Depilacao-feminina",
   },
   // DEPILAÇÃO MASCULINO
   {
@@ -517,7 +517,7 @@ export const servicos = [
     duracao: "-",
     valor: 250,
     img: "/servicos/1barba.png",
-    filterId: "depilacao-masculina",
+    filterId: "Depilacao-masculina",
   },
   {
     id: 40,
@@ -528,7 +528,7 @@ export const servicos = [
     duracao: "-",
     valor: 90,
     img: "/servicos/1costeleta.png",
-    filterId: "depilacao-masculina",
+    filterId: "Depilacao-masculina",
   },
   {
     id: 41,
@@ -539,7 +539,7 @@ export const servicos = [
     duracao: "-",
     valor: 130,
     img: "/servicos/1pescoco.png",
-    filterId: "depilacao-masculina",
+    filterId: "Depilacao-masculina",
   },
   {
     id: 42,
@@ -550,7 +550,7 @@ export const servicos = [
     duracao: "-",
     valor: 50,
     img: "/servicos/1orelha.png",
-    filterId: "depilacao-masculina",
+    filterId: "Depilacao-masculina",
   },
   {
     id: 43,
@@ -561,7 +561,7 @@ export const servicos = [
     duracao: "-",
     valor: 40,
     img: "/servicos/1entresobrancelhas.png",
-    filterId: "depilacao-masculina",
+    filterId: "Depilacao-masculina",
   },
   {
     id: 44,
@@ -572,7 +572,7 @@ export const servicos = [
     duracao: "-",
     valor: 100,
     img: "/servicos/1axila.png",
-    filterId: "depilacao-masculina",
+    filterId: "Depilacao-masculina",
   },
   {
     id: 45,
@@ -583,7 +583,7 @@ export const servicos = [
     duracao: "-",
     valor: 150,
     img: "/servicos/1braco.png",
-    filterId: "depilacao-masculina",
+    filterId: "Depilacao-masculina",
   },
   {
     id: 46,
@@ -594,7 +594,7 @@ export const servicos = [
     duracao: "-",
     valor: 200,
     img: "/servicos/1ombro.png",
-    filterId: "depilacao-masculina",
+    filterId: "Depilacao-masculina",
   },
   {
     id: 47,
@@ -605,7 +605,7 @@ export const servicos = [
     duracao: "-",
     valor: 250,
     img: "/servicos/1peito.png",
-    filterId: "depilacao-masculina",
+    filterId: "Depilacao-masculina",
   },
   {
     id: 48,
@@ -616,7 +616,7 @@ export const servicos = [
     duracao: "-",
     valor: 500,
     img: "/servicos/1costas.png",
-    filterId: "depilacao-masculina",
+    filterId: "Depilacao-masculina",
   },
   {
     id: 49,
@@ -627,7 +627,7 @@ export const servicos = [
     duracao: "-",
     valor: 300,
     img: "/servicos/1superior.png",
-    filterId: "depilacao-masculina",
+    filterId: "Depilacao-masculina",
   },
   {
     id: 50,
@@ -638,7 +638,7 @@ export const servicos = [
     duracao: "-",
     valor: 300,
     img: "/servicos/1coxa.png",
-    filterId: "depilacao-masculina",
+    filterId: "Depilacao-masculina",
   },
   {
     id: 51,
@@ -649,7 +649,7 @@ export const servicos = [
     duracao: "-",
     valor: 300,
     img: "/servicos/1perna.png",
-    filterId: "depilacao-masculina",
+    filterId: "Depilacao-masculina",
   },
   {
     id: 52,
@@ -660,7 +660,7 @@ export const servicos = [
     duracao: "-",
     valor: 550,
     img: "/servicos/1pernatoda.png",
-    filterId: "depilacao-masculina",
+    filterId: "Depilacao-masculina",
   },
   {
     id: 53,
@@ -671,7 +671,7 @@ export const servicos = [
     duracao: "-",
     valor: 190,
     img: "/servicos/1gluteo.png",
-    filterId: "depilacao-masculina",
+    filterId: "Depilacao-masculina",
   },
   // ODONTOLOGIA
   {
@@ -683,7 +683,7 @@ export const servicos = [
     duracao: "-",
     valor: "--",
     img: "/servicos/clinicageral.png",
-    filterId: "odontologia",
+    filterId: "Odontologia",
   },
   {
     id: 55,
@@ -694,7 +694,7 @@ export const servicos = [
     duracao: "-",
     valor: "--",
     img: "/servicos/implante.png",
-    filterId: "odontologia",
+    filterId: "Odontologia",
   },
   {
     id: 56,
@@ -705,7 +705,7 @@ export const servicos = [
     duracao: "-",
     valor: "--",
     img: "/servicos/protese.png",
-    filterId: "odontologia",
+    filterId: "Odontologia",
   },
   {
     id: 57,
@@ -716,7 +716,7 @@ export const servicos = [
     duracao: "-",
     valor: "--",
     img: "/servicos/ortodontia.png",
-    filterId: "odontologia",
+    filterId: "Odontologia",
   },
   {
     id: 58,
@@ -727,7 +727,7 @@ export const servicos = [
     duracao: "-",
     valor: "--",
     img: "/servicos/especial.png",
-    filterId: "odontologia",
+    filterId: "Odontologia",
   },
   {
     id: 59,
@@ -738,7 +738,7 @@ export const servicos = [
     duracao: "-",
     valor: "--",
     img: "/servicos/estetica.png",
-    filterId: "odontologia",
+    filterId: "Odontologia",
   },
   // ADICIONAR DO SPA POR QUE FALTOU
   {
@@ -750,7 +750,7 @@ export const servicos = [
     duracao: "-",
     valor: "--",
     img: "/servicos/peeling.png",
-    filterId: "the-spa",
+    filterId: "The-spa",
   },
   {
     id: 61,
@@ -761,7 +761,7 @@ export const servicos = [
     duracao: "-",
     valor: "--",
     img: "/servicos/radio.png",
-    filterId: "the-spa",
+    filterId: "The-spa",
   },
   // TERAPIA CAPILAR
   {
@@ -773,7 +773,7 @@ export const servicos = [
     duracao: "-",
     valor: "GRATUITO",
     img: "/servicos/avaliacao.png",
-    filterId: "terapia-capilar",
+    filterId: "Terapia-capilar",
   },
   {
     id: 63,
@@ -784,7 +784,7 @@ export const servicos = [
     duracao: "-",
     valor: 120,
     img: "/servicos/detox.png",
-    filterId: "terapia-capilar",
+    filterId: "Terapia-capilar",
   },
   {
     id: 64,
@@ -795,7 +795,7 @@ export const servicos = [
     duracao: "-",
     valor: 250,
     img: "/servicos/microagulhamento.png",
-    filterId: "terapia-capilar",
+    filterId: "Terapia-capilar",
   },
   {
     id: 65,
@@ -806,7 +806,7 @@ export const servicos = [
     duracao: "-",
     valor: 100,
     img: "/servicos/hidrica.png",
-    filterId: "terapia-capilar",
+    filterId: "Terapia-capilar",
   },
   {
     id: 66,
@@ -817,7 +817,7 @@ export const servicos = [
     duracao: "-",
     valor: 300,
     img: "/servicos/mesoterapia.png",
-    filterId: "terapia-capilar",
+    filterId: "Terapia-capilar",
   },
   // NUTRIÇÃO
   {
@@ -829,7 +829,7 @@ export const servicos = [
     duracao: "--",
     valor: "--",
     img: "/servicos/alimentar.png",
-    filterId: "nutricao",
+    filterId: "Nutricao",
   },
   // NUTROLOGIA
   {
@@ -841,7 +841,7 @@ export const servicos = [
     duracao: "--",
     valor: "--",
     img: "/servicos/nutrologa.png",
-    filterId: "nutrologia",
+    filterId: "Nutrologia",
   },
   {
     id: 69,
@@ -851,7 +851,7 @@ export const servicos = [
     duracao: "1H30",
     valor: 100,
     img: "/servicos/lavagem-terapeutica.png",
-    filterId: "terapia-capilar",
+    filterId: "Terapia-capilar",
   },
   {
     id: 62,
@@ -861,7 +861,7 @@ export const servicos = [
     duracao: "2H",
     valor: 150,
     img: "/servicos/peeling-capilar.png",
-    filterId: "terapia-capilar",
+    filterId: "Terapia-capilar",
   },
   {
     id: 16,
@@ -871,7 +871,7 @@ export const servicos = [
     duracao: "1H30",
     valor: 549,
     img: "/servicos/cronograma-capilar.png",
-    filterId: "terapia-capilar",
+    filterId: "Terapia-capilar",
   },
   {
     id: 17,
@@ -883,6 +883,6 @@ export const servicos = [
     duracao: "-",
     valor: "-",
     img: "/servicos/tratamentos-capilares.png",
-    filterId: "terapia-capilar",
+    filterId: "Terapia-capilar",
   },
 ];

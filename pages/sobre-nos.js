@@ -4,15 +4,6 @@ import Button from "../components/Button";
 import { useForm } from "react-hook-form";
 import Head from "next/head";
 
-/* function SobreNos() {
-  const { register, handleSubmit } = useForm();
-
-  const onSubmit = (formData) => {
-    const subject = "Quero entrar em contato.";
-    const body = `NOME: ${formData.name} | EMAIL: ${formData.email} | NÚMERO: ${formData.number} | MENSAGEM: ${formData.message}`;
-    window.location.href = `mailto:atendimentorennovi@gmail.com?subject=${subject}&body= ${body}`;
-  }; */
-
 function SobreNos() {
   const { register, handleSubmit } = useForm();
 

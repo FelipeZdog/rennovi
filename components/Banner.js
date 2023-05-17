@@ -9,7 +9,7 @@ function Banner() {
       id="inicio"
     >
       <div className="flex flex-col centered-content">
-        <h1 className="text-[15px] sm:text-[20px] md:text[30px] lg:text-[40px] 2x1:text-[50px] py-0">
+        <h1 className="text-[25px] sm:text-[25px] md:text[30px] lg:text-[40px] 2x1:text-[50px] py-0">
           Conheça a <span className="font-extrabold">Clínica Rennovi</span>®!
         </h1>
         <p className="mt-2 text-[12px] sm:text-[12px] md:text-[15px] lg:text-[20px]">

@@ -55,6 +55,39 @@ export const slider = [
     src: "/slide/SLIDE7.png",
   },
 ];
+
+// Slider das máquinas para celular
+export const slidemobile = [
+  {
+    id: 1,
+    src: "/slide/cel1.png",
+  },
+  {
+    id: 2,
+    src: "/slide/cel2.png",
+  },
+  {
+    id: 3,
+    src: "/slide/cel3.png",
+  },
+  {
+    id: 4,
+    src: "/slide/cel4.png",
+  },
+  {
+    id: 5,
+    src: "/slide/cel5.png",
+  },
+  {
+    id: 6,
+    src: "/slide/cel6.png",
+  },
+  {
+    id: 7,
+    src: "/slide/cel7.png",
+  },
+];
+
 // Slider dos especialistas
 export const especialistas = [
   {
@@ -76,7 +109,7 @@ export const especialistas = [
     src: "/especialistas/nise.png",
     name: "Dra. Nise Arruda",
     cargo: "Nutricionista",
-    code: "CRN11 - 8540",
+    code: "CRN - 8540",
   },
   {
     id: 3,
@@ -111,7 +144,7 @@ export const especialistas = [
     src: "/especialistas/naira.png",
     name: "Dra. Naira Thaís",
     cargo: "Fisioterapeuta",
-    code: "CREFITO 6: 334.704-F",
+    code: "CREFITO 6: 335.704-F",
   },
   {
     id: 1,
@@ -143,6 +176,7 @@ export const especialistas = [
   },
 ];
 
+// Todos os servicos
 export const servicos = [
   {
     id: 1,

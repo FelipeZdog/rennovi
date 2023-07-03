@@ -61,9 +61,27 @@ export default Grupo; */
 import React from "react";
 import Button from "./Button";
 import { useForm, SubmitHandler } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 
 function Grupo() {
   const { register, handleSubmit } = useForm();
+
+  /* const templateParams{
+    from_name: name,
+    message: message,
+    email: email
+  }
+  emailjs.send("service_agxzw9t", "template_zyj8skp", templateParams,"CtGs-QrrnT8NMJvt_")
+  .then((response)=>{
+    console.log("Email Enviado", response.status, response.text)
+     setName('')
+     setMessage('')
+     setEmail('')
+  }, (err) => {
+    console.log("Erro: ", err)
+  });
+
+  */
 
   const onSubmit = (formData) => {
     const name = encodeURIComponent(formData.name);

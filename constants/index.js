@@ -368,7 +368,7 @@ export const servicos = [
   // DEPILAÇÃO FEMININO
   {
     id: 23,
-    titulo: "BUÇO",
+    titulo: "BUÇO FEMININO",
     desc: "Processo de depilação do buço feminino por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
     serv: null,
     duracao: "-",
@@ -378,7 +378,7 @@ export const servicos = [
   },
   {
     id: 24,
-    titulo: "QUEIXO",
+    titulo: "QUEIXO FEMININO",
     desc: "Processo de depilação do queixo feminino por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -389,7 +389,7 @@ export const servicos = [
   },
   {
     id: 25,
-    titulo: "FACE",
+    titulo: "FACE FEMININA",
     desc: "Processo de depilação da face feminina por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -400,7 +400,7 @@ export const servicos = [
   },
   {
     id: 26,
-    titulo: "AXILA",
+    titulo: "AXILA FEMININA",
     desc: "Processo de depilação das axilas femininas por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -411,7 +411,7 @@ export const servicos = [
   },
   {
     id: 27,
-    titulo: "ANTEBRAÇO",
+    titulo: "ANTEBRAÇO FEMININO",
     desc: "Processo de depilação do antebraço feminino por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -422,7 +422,7 @@ export const servicos = [
   },
   {
     id: 28,
-    titulo: "LINHA ALBA",
+    titulo: "LINHA ALBA FEMININA",
     desc: "Processo de depilação da linha alba feminina por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -433,7 +433,7 @@ export const servicos = [
   },
   {
     id: 29,
-    titulo: "VIRILHA SIMPLES",
+    titulo: "VIRILHA SIMPLES FEMININA",
     desc: "Processo de depilação simples de virilha feminina por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -444,7 +444,7 @@ export const servicos = [
   },
   {
     id: 30,
-    titulo: "VIRILHA COMPLETA",
+    titulo: "VIRILHA COMPLETA FEMININA",
     desc: "Processo de depilação completa da virilha feminina por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -455,7 +455,7 @@ export const servicos = [
   },
   {
     id: 31,
-    titulo: "COXAS",
+    titulo: "COXAS FEMININA",
     desc: "Processo de depilação de coxas femininas por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -466,7 +466,7 @@ export const servicos = [
   },
   {
     id: 32,
-    titulo: "PERNA",
+    titulo: "PERNA FEMININA",
     desc: "Processo de depilação de pernas femininas por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -477,7 +477,7 @@ export const servicos = [
   },
   {
     id: 33,
-    titulo: "COXA + PERNA",
+    titulo: "COXA + PERNA FEMININA",
     desc: "Processo de depilação de coxa e perna feminina por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -488,7 +488,7 @@ export const servicos = [
   },
   {
     id: 34,
-    titulo: "PÉ + DEDO",
+    titulo: "PÉ + DEDO FEMININO",
     desc: "Processo de depilação de pés e dedos femininos por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -499,7 +499,7 @@ export const servicos = [
   },
   {
     id: 35,
-    titulo: "GLÚTEOS",
+    titulo: "GLÚTEOS FEMININOS",
     desc: "Processo de depilação dos glúteos femininos por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -510,7 +510,7 @@ export const servicos = [
   },
   {
     id: 36,
-    titulo: "ARÉOLAS",
+    titulo: "ARÉOLAS FEMININAS",
     desc: "Processo de depilação das aréolas femininas por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -521,7 +521,7 @@ export const servicos = [
   },
   {
     id: 37,
-    titulo: "MÃOS + DEDOS",
+    titulo: "MÃOS + DEDOS FEMININOS",
     desc: "Processo de depilação de mãos e dedos femininos por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -532,7 +532,7 @@ export const servicos = [
   },
   {
     id: 38,
-    titulo: "ENTRE SOBRANCELHAS",
+    titulo: "ENTRE SOBRANCELHAS FEMININAS",
     desc: "Processo de depilação entre sobrancelhas feminino por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -544,7 +544,7 @@ export const servicos = [
   // DEPILAÇÃO MASCULINO
   {
     id: 39,
-    titulo: "BARBA COMPLETA",
+    titulo: "BARBA COMPLETA MASCULINA",
     desc: "Processo de depilação de barba completa masculina por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -555,7 +555,7 @@ export const servicos = [
   },
   {
     id: 40,
-    titulo: "COSTELETAS",
+    titulo: "COSTELETAS MASCULINAS",
     desc: "Processo de depilação de costeletas masculinas por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -566,7 +566,7 @@ export const servicos = [
   },
   {
     id: 41,
-    titulo: "PESCOÇO",
+    titulo: "PESCOÇO MASCULINO",
     desc: "Processo de depilação de pescoço masculino por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -577,7 +577,7 @@ export const servicos = [
   },
   {
     id: 42,
-    titulo: "ORELHAS",
+    titulo: "ORELHAS MASCULINAS",
     desc: "Processo de depilação de orelhas masculinas por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -588,7 +588,7 @@ export const servicos = [
   },
   {
     id: 43,
-    titulo: "ENTRE SOBRANCELHAS",
+    titulo: "ENTRE SOBRANCELHAS MASCULINAS",
     desc: "Processo de depilação entre sobrancelhas masculinas por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -599,7 +599,7 @@ export const servicos = [
   },
   {
     id: 44,
-    titulo: "AXILA",
+    titulo: "AXILA MASCULINA",
     desc: "Processo de depilação de axilas masculinas por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -610,7 +610,7 @@ export const servicos = [
   },
   {
     id: 45,
-    titulo: "BRAÇO",
+    titulo: "BRAÇO MASCULINO",
     desc: "Processo de depilação de braços masculinos por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -621,7 +621,7 @@ export const servicos = [
   },
   {
     id: 46,
-    titulo: "OMBRO",
+    titulo: "OMBRO MASCULINO",
     desc: "Processo de depilação de ombros masculinos por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -632,7 +632,7 @@ export const servicos = [
   },
   {
     id: 47,
-    titulo: "PEITO",
+    titulo: "PEITO MASCULINO",
     desc: "Processo de depilação de peito masculino por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -643,7 +643,7 @@ export const servicos = [
   },
   {
     id: 48,
-    titulo: "COSTAS INTEIRA",
+    titulo: "COSTAS INTEIRA MASCULINA",
     desc: "Processo de depilação de costas inteira masculina por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -654,7 +654,7 @@ export const servicos = [
   },
   {
     id: 49,
-    titulo: "COSTAS SUPERIOR",
+    titulo: "COSTAS SUPERIOR MASCULINA",
     desc: "Processo de depilação de costas superior masculina por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -665,7 +665,7 @@ export const servicos = [
   },
   {
     id: 50,
-    titulo: "COXA",
+    titulo: "COXA MASCULINA",
     desc: "Processo de depilação de coxas masculinas por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -676,7 +676,7 @@ export const servicos = [
   },
   {
     id: 51,
-    titulo: "PERNA",
+    titulo: "PERNA MASCULINA",
     desc: "Processo de depilação de pernas masculinas por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -687,7 +687,7 @@ export const servicos = [
   },
   {
     id: 52,
-    titulo: "COXA + PERNA",
+    titulo: "COXA + PERNA MASCULINA",
     desc: "Processo de depilação de pernas inteiras masculinas por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
@@ -698,7 +698,7 @@ export const servicos = [
   },
   {
     id: 53,
-    titulo: "GLÚTEOS",
+    titulo: "GLÚTEOS MASCULINO",
     desc: "Processo de depilação de glúteos masculinos por meio de laser que destroem o folículo piloso que proporciona resultados duradouros com manutenções anuais. Nossa tecnologia pioneira remove até 80% dos pelos na primeira sessão.",
 
     serv: null,
